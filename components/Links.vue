@@ -1,0 +1,57 @@
+<template>
+    <nav class="nav-list">
+      <nuxt-link class="nav-item" to="/products">Products</nuxt-link>
+      <nuxt-link class="nav-item" to="/apps">Apps</nuxt-link>
+      <nuxt-link class="nav-item" to="/developers">Developers</nuxt-link>
+      <nuxt-link class="nav-item" to="/blog">Blog</nuxt-link>
+    </nav>
+
+</template>
+
+<script>
+
+    export default {
+        data() {
+            return {
+              
+            }
+        }
+    }
+</script>
+
+<style lang="scss" scoped>
+
+    @import "@/assets/_variables.scss";
+
+    .nav-list {
+        display:flex;
+        flex-direction:row;
+        height:104px;
+        align-items:center;
+        justify-content:center;
+
+        @media (max-width: $breakpoint-tablet) {
+          height:54px;
+        }
+
+        .nav-item {
+            margin: 0 1.2rem;
+            text-decoration:none;
+            font-family: 'Poppins', sans-serif;
+            font-weight:bold;
+            font-size:$font-size-medium;
+            color:$blue;
+
+            @media (max-width: $breakpoint-tablet) {
+              margin: 0 .6rem;
+              font-size:$font-size-standard;
+            }
+
+            &.exact-active-link {
+              color: black;
+            }
+        }
+    }
+    
+
+</style>

@@ -1,7 +1,7 @@
 <template>
     <section class="doc-page">
 
-        <h4>Setting up for Native Applications</h4>
+        <h2>Setting up for Native Applications</h2>
         <p>
             <span class="red">
                 <b>Warning: This is quite complex and will take some patience and focus to accomplish.</b><br>

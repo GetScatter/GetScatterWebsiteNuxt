@@ -27,6 +27,10 @@
 
 </script>
 
-<style>
+<style lang="scss" rel="stylesheet/scss">
+
+    @import "@/assets/_variables.scss";
+
+    html, body { overflow-y:auto; }
 
 </style>

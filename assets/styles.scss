@@ -47,9 +47,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background 0.2s ease-in-out;
-  overflow-x: hidden;
-  overflow-y:auto;
   padding-bottom:8rem;
+
+  &.scroll {
+    overflow-y: auto;
+  }
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 #app {

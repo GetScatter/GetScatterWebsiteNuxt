@@ -22,15 +22,18 @@
         data(){return {
 
         }},
+        head: {
+          bodyAttrs: {
+            class: 'scroll'
+          }
+        }
 
     }
 
 </script>
 
-<style lang="scss" rel="stylesheet/scss">
+<style lang="scss" rel="stylesheet/scss" scoped>
 
     @import "@/assets/_variables.scss";
-
-    html, body { overflow-y:auto; }
 
 </style>

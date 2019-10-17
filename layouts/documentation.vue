@@ -27,16 +27,19 @@
         data(){return {
 
         }},
+        head: {
+          bodyAttrs: {
+            class: 'noscroll'
+          }
+        }
 
     }
 
 </script>
 
-<style lang="scss" rel="stylesheet/scss">
+<style lang="scss" rel="stylesheet/scss" scoped>
 
     @import "@/assets/_variables.scss";
-
-    html, body { overflow:hidden; }
 
     #documentation {
         display:flex;

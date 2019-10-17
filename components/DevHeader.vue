@@ -38,6 +38,8 @@
 
     @import "@/assets/_variables.scss";
 
+    html, body { overflow:hidden; }
+
     header{
         display:flex;
         flex-direction:row;

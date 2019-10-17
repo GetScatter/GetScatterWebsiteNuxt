@@ -5,26 +5,10 @@
 			<section class="row">
 				<section class="single-column">
 					<img src="../assets/love.png" class="loveme">
-					<h2>Scatter is a community</h2>
-					<h4>
+					<h1 class="centered">Scatter is your community</h1>
+					<h4 class="centered">
 						We're not just a part of your lives, you're a part of ours.
 					</h4>
-					<p>
-						Interacting with the <b>people</b> who use Scatter has been one of the most humbling experiences of our lives and we've
-						met some truly kind individuals along the way. A lot of the decisions we've made over the years have been directly influenced by the conversations
-						that have gone on in our community chats and we've watched in astonishment as random people on the internet helped other random people through both good times and bad times.
-
-						<br>
-						<br>
-						We've gotten request after request over the years for us to register as an <i>EOSIO Block Producer</i>, and we're finally ready to
-						step into that role and take on yet another responsibility which helps secure users, and the network.
-
-					</p>
-					<figure class="box">
-						Though we're starting with the <b>EOS Mainnet</b>, we intend to expand this initiative into other chains and networks as well, as we
-						fully believe in a broader ecosystem which includes many options with many different structures, each suited best for individual projects.
-					</figure>
-
 					<!-- VOTE BOX -->
 					<section class="vote-box">
 						<section v-if="error">
@@ -62,6 +46,19 @@
 							<figure @click="vote" class="button button-large">Vote Again</figure>
 						</section>
 					</section>
+					<p>
+						Interacting with the <b>people</b> who use Scatter has been one of the most humbling experiences of our lives and we've
+						met some truly kind individuals along the way. A lot of the decisions we've made over the years have been directly influenced by the conversations
+						that have gone on in our community chats and we've watched in astonishment as random people on the internet helped other random people through both good times and bad times.
+						We've gotten request after request over the years for us to register as an <i>EOSIO Block Producer</i>, and we're finally ready to
+						step into that role and take on yet another responsibility which helps secure users, and the network.
+					</p>
+					<figure class="box">
+						Though we're starting with the <b>EOS Mainnet</b>, we intend to expand this initiative into other chains and networks as well, as we
+						fully believe in a broader ecosystem which includes many options with many different structures, each suited best for individual projects.
+					</figure>
+
+					
 
 				</section>
 
@@ -393,7 +390,7 @@
 		}
 
 		.vote-box {
-			margin-top:80px;
+			margin-top:2rem;
 			padding:15px;
 			text-align:center;
 

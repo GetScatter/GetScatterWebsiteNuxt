@@ -51,6 +51,7 @@ body {
 
   &.scroll {
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   &.noscroll {

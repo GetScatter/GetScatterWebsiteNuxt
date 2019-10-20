@@ -1,5 +1,5 @@
 <template>
-    <nav class="nav-list">
+    <nav class="nav-list" role="navigation">
       <nuxt-link class="nav-item" to="/products">Products</nuxt-link>
       <nuxt-link class="nav-item" to="/apps">Apps</nuxt-link>
       <nuxt-link class="nav-item" to="/developers">Developers</nuxt-link>

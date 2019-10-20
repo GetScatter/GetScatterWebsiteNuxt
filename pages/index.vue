@@ -7,7 +7,7 @@
                         Your blockchain wallet
                     </h1>
                     <h3>
-                        Scatter Desktop is an <a href="https://github.com/GetScatter">open-source</a> wallet for your digital currencies and assets. <br><span>Available now for Windows, MacOS, and Linux.</span>
+                        Scatter Desktop is an <a href="https://github.com/GetScatter">open-source</a> wallet for your digital currencies and assets. <hr><span>Available now for Windows, MacOS, and Linux.</span>
                     </h3>
                     <nuxt-link to="/download" alt="Get Started" class="button">Download Scatter Desktop</nuxt-link>
                 </div>
@@ -28,9 +28,9 @@
                 <img src="../assets/voteforus.png">
             </nuxt-link>
         </section>
-        <section class="full-width" data-aos="fade-up">
+        <!-- <section class="full-width" data-aos="fade-up">
             <TopDapps></TopDapps>
-        </section>
+        </section> -->
         <!-- <section class="full-width" id="to-do" data-aos="fade-up">
             <section class="half-width" id="bridge-box">
                 <h3>Scatter Bridge</h3>
@@ -131,7 +131,7 @@
         display:flex;
         flex-direction:row;
         align-items:center;
-        margin:0 auto;
+        margin:0 auto 4rem;
         background-image:url('../assets/scatter_leadin_bg.png');
         background-position:center right;
         background-repeat:no-repeat;
@@ -177,10 +177,16 @@
             h3 {
                 color:$grey;
                 font-size: $font-size-standard;
+                line-height: 20px;
                 
                 span {
                     color:black;
                 }   
+            }
+
+            hr {
+                margin:1.5rem 0;
+                width:50%;
             }
 
             .button {
@@ -364,6 +370,7 @@
 
         @media (max-width: $breakpoint-tablet) {
             padding:4rem;
+            border-radius:0;
         }
 
 

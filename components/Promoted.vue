@@ -57,14 +57,16 @@
 
 
         <section class="app-categories" v-for="(list, type) in cats">
-            <!-- What i'm actually looking for is a series of discrete sections with apps that fall into them -->
             <h4>{{type}} <span>{{total}}</span></h4>
             <Search :search-set="list" without-search="true"  />
         </section>
+        
     </div>
 </template>
 
 <script>
+
+    import Search from '~/components/Search'
 
     export default {
         name:'Promoted',
@@ -75,7 +77,7 @@
           }
         },
         components: {
-
+            Search
         },
         computed: {
             cats(){

@@ -18,17 +18,13 @@
 </template>
 
 <script>
-  import {devDocs} from '../../data/devDocs';
-
 
   export default {
     data(){ return {
 
     }},
     computed:{
-      links(){
-        return devDocs.docs.find(x => x.route === 'api-reference').children;
-      }
+
     },
     mounted(){
 

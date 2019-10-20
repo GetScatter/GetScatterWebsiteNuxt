@@ -20,7 +20,7 @@
             </svg>
         </nuxt-link>
 
-        <h3>Scatter Developer Documentation</h3>
+        <h3>Developer Documentation</h3>
 
     </header>
 </template>
@@ -34,7 +34,6 @@
 </script>
 
 <style lang="scss" scoped>
-
 
     @import "@/assets/_variables.scss";
 
@@ -51,6 +50,10 @@
 
         h3 {
             margin:0 0 0 1rem;
+
+            @media (max-width: $breakpoint-tablet) {
+                font-size:$font-size-standard;
+            }
         }
     }
 

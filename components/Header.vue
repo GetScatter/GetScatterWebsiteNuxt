@@ -95,13 +95,14 @@
     }
 
     .external-links {
-        display:block;
+        display:flex;
+        flex-direction:column;
         position:fixed;
         right:20px;
         top:20px;
         z-index:1000;
         background:white;
-        padding:12px;
+        padding:6px;
         border-radius:6px;
 
         @media (max-width: $breakpoint-tablet) {

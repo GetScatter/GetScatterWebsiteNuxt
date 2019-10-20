@@ -37,7 +37,7 @@
 
 </script>
 
-<style lang="scss" rel="stylesheet/scss" scoped>
+<style lang="scss" rel="stylesheet/scss" >
 
     @import "@/assets/_variables.scss";
 
@@ -51,17 +51,34 @@
           flex-direction:row;
           align-content:flex-start;
 
+          @media (max-width: $breakpoint-tablet) {
+              flex-direction:column;
+          }
+
           .documentation-content {
             width:calc(100% - 300px);
             padding:4rem;
             height:calc(100vh - 80px);
-            overflow-y:auto;
+            overflow-y:scroll;
+
+            @media (max-width: $breakpoint-tablet) {
+                width:100%;
+                padding:2rem;
+            }
           }
 
         }
 
         .doc-page {
           line-height: 3rem;
+
+          ul {
+            padding:2rem;
+          }
+
+          p {
+            margin-bottom:2rem;
+          }
         }
 
         .notice {

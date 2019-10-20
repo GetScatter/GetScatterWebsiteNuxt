@@ -1,5 +1,14 @@
 <template>
-    <nav class="dev-nav-list">
+    <nav class="dev-nav-list" role="navigation" :class="{'open':toggleDevLinks}">
+      <div class="mobile-button" role="button" v-on:click="$store.dispatch('nav/toggleDevLinks')">
+        <svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <path d="M0,1 L18,1" id="Path-3" stroke="#000"></path>
+                <path d="M0,7 L18,7" id="Path-3" stroke="#000"></path>
+                <path d="M0,13 L18,13" id="Path-3" stroke="#000"></path>
+            </g>
+        </svg>
+      </div>
       <section class="block">
         <nuxt-link class="nav-item" to="/developers">Getting Started</nuxt-link>
       </section>
@@ -34,7 +43,7 @@
       </section>
       <section class="block">
         <nuxt-link class="nav-item" to="/developers/api">API Reference</nuxt-link>
-        <nuxt-link class="nav-item sub" to="/developers/api/linkaccount">Login / Get Identity</nuxt-link>
+        <nuxt-link class="nav-item sub" to="/developers/api/getidentity">Login / Get Identity</nuxt-link>
         <nuxt-link class="nav-item sub" to="/developers/api/identityfrompermissions">Identity From Permissions</nuxt-link>
         <nuxt-link class="nav-item sub" to="/developers/api/authenticate">Authenticate</nuxt-link>
         <nuxt-link class="nav-item sub" to="/developers/api/suggestnetwork">Suggest Network</nuxt-link>
@@ -53,10 +62,17 @@
 
 <script>
 
+    import { nav } from '@/store/nav'
+
     export default {
         data() {
             return {
-              
+
+            }
+        },
+        computed: {
+            toggleDevLinks() {
+                return this.$store.getters['nav/toggleDevLinks']
             }
         }
     }
@@ -77,6 +93,14 @@
         background:lighten($blue,47%);
         overflow:auto;
         border-right:1px solid lighten($blue,36%);
+        position:relative;
+
+        .mobile-button {
+          display:none;
+          position:absolute;
+          right:1.66rem;
+          top:1.66rem;
+        }
 
         .block {
           border-bottom:1px solid lighten($blue,36%);
@@ -86,18 +110,16 @@
           padding:1rem 0;
           margin: 0 0 1rem;
 
-        }
+          @media screen and (max-width: $breakpoint-tablet) {
+            border-bottom:0px solid lighten($blue,36%);
+            padding:0;
+            margin: 0;
+            width:auto;
+          }
 
-        &:last-child {
-          margin-bottom:4rem;
-        }
-
-        @media (max-width: $breakpoint-tablet) {
-          height:54px;
         }
 
         .nav-item {
-            margin: 0 0 1rem 0;
             text-decoration:none;
             font-family: 'Poppins', sans-serif;
             font-weight:bold;
@@ -118,7 +140,6 @@
             }
 
             @media (max-width: $breakpoint-tablet) {
-              margin: 0 1rem;
               font-size:$font-size-standard;
             }
 
@@ -126,6 +147,57 @@
               color: black;
             }
         }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+
+          padding:1.666rem;
+          height:60px;
+
+          .mobile-button {
+            display:block;
+          }
+          
+          a:not(.exact-active-link), .dropdown .dropbtn {
+            display: none;
+          }
+
+          &.open {
+            height:calc(100vh - 60px);
+            overflow-y:auto;
+
+            a:not(.exact-active-link), .dropdown .dropbtn {
+              display: block;
+            }
+
+            .block {
+              border-bottom:1px solid lighten($blue,36%);
+              display:flex;
+              flex-direction:column;
+              width:100%;
+              padding:1rem 0 2rem;
+              margin: 0 0 1rem;
+
+            }
+
+          }
+
+        }
+
+        @media (max-width: $breakpoint-tablet) {
+            width:100%;
+        }
+
+        
+
+        &:last-child {
+          margin-bottom:4rem;
+        }
+
+        @media (max-width: $breakpoint-tablet) {
+          height:54px;
+        }
+
+        
     }
     
 

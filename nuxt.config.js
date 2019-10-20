@@ -30,7 +30,10 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['~/plugins/languages'],
+  plugins: [
+    { src: '~/plugins/languages' },
+    { src: "@/plugins/aos", ssr: false }
+  ],
   /*
   ** Nuxt.js dev-modules
   */

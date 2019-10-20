@@ -30,8 +30,13 @@
 
 <script>
 
+    import VueClazyLoad from 'vue-clazy-load'
+
     export default {
         name:'Search',
+        components: {
+            VueClazyLoad
+        },
         data(){
             return {
                 searchterms:'',

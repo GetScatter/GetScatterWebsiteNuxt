@@ -79,8 +79,8 @@
         description: attr.description,
         related: attr.related,
         extraComponent: attr.extraComponent,
-        renderFunc: attr.name.vue.render,
-        staticRenderFuncs: attr.name.vue.staticRenderFns,
+        renderFunc: fileContent.vue.render,
+        staticRenderFuncs: fileContent.vue.staticRenderFns,
         image: {
           main: attr.image && attr.image.main,
           og: attr.image && attr.image.og

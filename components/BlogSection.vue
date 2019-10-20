@@ -1,27 +1,22 @@
 <template>
-  <section>
+  <section id="blog">
     <div class="">
-      <div>
-        <h2>{{ $t('posts') }}</h2>
-        <span class=""/>
-      </div>
-      <LangSwitcher/>
+      
     </div>
-    <ul class="blogs">
+    <section class="blogs">
       <blog-card
         v-for="blog in blogs"
         :key="blog.name"
         :blog="blog" />
-    </ul>
+    </section>
   </section>
 </template>
 <script>
 
 import BlogCard from "@/components/BlogCard.vue";
-import LangSwitcher from '@/components/LangSwitcher'
 
 export default {
-  components: { BlogCard, LangSwitcher },
+  components: { BlogCard },
   props: {
     blogs: {
       type: Array
@@ -30,6 +25,14 @@ export default {
 }
 </script>
 <style lang="scss">
+
+#blog {
+  a {
+    text-decoration:none;
+  }
+}
+
+
 
 </style>
 

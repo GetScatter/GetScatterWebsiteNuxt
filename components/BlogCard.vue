@@ -1,5 +1,5 @@
 <template>
-  <li class="blog">
+  <article class="blog">
     <nuxt-link 
       :to="localePath({ name: 'blog-slug', params: { slug: blog.name }})"
     >
@@ -9,14 +9,14 @@
         :width="'952'"
         :height="'509'"
         :alt="blog.cardAlt" />
-      <h3 class="blog__title">
+      <h2 class="blog__title">
         {{ blog.title }}
-      </h3>
+      </h2>
       <p class="blog__description">
         {{ blog.description }}
       </p>
     </nuxt-link>
-  </li>
+  </article>
 </template>
 
 <script lang="js">
@@ -30,5 +30,13 @@
 </script>
 
 <style lang="scss">
+
+article.blog {
+  margin:0 0 6rem;
+
+  h2 {
+    margin-bottom:1rem;
+  }
+}
 
 </style>

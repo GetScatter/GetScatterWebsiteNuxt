@@ -1,8 +1,14 @@
 <template>
   <div class="page-index">
-    <div class="container">
-      <BlogSection :blogs="blogs"/>
-    </div>
+    <section class="body" id="blockchains_main">
+      <div class="body-text">
+        <div class="row">
+          <div class="single-column blockchains_body" data-aos="fade-up">
+            <BlogSection :blogs="blogs"/></BlogSection>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

@@ -38,6 +38,10 @@
           height:54px;
         }
 
+        @media (max-width: $breakpoint-mobile) {
+          justify-content:flex-end;
+        }
+
         .nav-item {
             margin: 0 1.2rem;
             text-decoration:none;
@@ -52,8 +56,7 @@
             }
 
             @media (max-width: $breakpoint-mobile) {
-              margin: 0 .4rem;
-              font-size:$font-size-tiny;
+              margin: 0 .6rem;
             }
 
             &.exact-active-link {

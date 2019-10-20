@@ -44,6 +44,11 @@
         justify-content:center;
         height:80px;
 
+        @media (max-width: $breakpoint-mobile) {
+          flex-direction:column;
+          height: 60px;
+        }
+
         li a {
             color:$blue;
         }
@@ -74,7 +79,7 @@
 
             @media (max-width: $breakpoint-tablet) {
               width:34px;
-            height:34px;
+              height:34px;
             }
 
         }
@@ -92,6 +97,10 @@
 
     .app-links{
         justify-self: end;
+
+        @media (max-width: $breakpoint-mobile) {
+            align-self: end;
+        }
     }
 
     .external-links {
@@ -109,6 +118,11 @@
           right:10px;
           top:10px;
           padding:0px;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+          top:initial;
+          bottom:10px;
         }
 
         a {

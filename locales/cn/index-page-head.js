@@ -1,4 +1,4 @@
 export default {
-  title: 'Marina Aísa - Product Designer y Front-End Developer',
-  description: 'Soy una diseñadora de producto (UI/UX) y desarrolladora Front-End que vive en Barcelona.'
+  title: '适用于EOS，以太坊，Tron和Blockchain的分散区块链钱包',
+  description: '您的数字货币和资产的钱包。'
 }

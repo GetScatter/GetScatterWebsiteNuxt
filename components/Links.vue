@@ -3,8 +3,8 @@
       <nuxt-link class="nav-item" to="/products">Products</nuxt-link>
       <nuxt-link class="nav-item" to="/apps">Apps</nuxt-link>
       <nuxt-link class="nav-item" to="/developers">Developers</nuxt-link>
-      <nuxt-link class="nav-item" to="/blog">Blog</nuxt-link>
-      <LangSwitcher/>
+      <nuxt-link class="nav-item" to="/articles">Articles</nuxt-link>
+      <!-- <LangSwitcher/> -->
     </nav>
 
 </template>
@@ -39,7 +39,8 @@
         }
 
         @media (max-width: $breakpoint-mobile) {
-          justify-content:flex-end;
+          justify-content: end;
+          width:calc(100vw - 80px);
         }
 
         .nav-item {

@@ -2,13 +2,6 @@
 const builtAt = new Date().toISOString()
 const path = require('path')
 const { I18N } = require('./locales/i18n-nuxt-config')
-import blogsEn from './content/en/blogsEn.js'
-import blogsCn from './content/cn/blogsCn.js'
-
-const productionUrl = {
-  en: "/en",
-  es: "/cn"
-};
 
 export default {
   mode: 'universal',
@@ -67,27 +60,13 @@ export default {
   */
   build: {
     extend (config) {
-      const rule = config.module.rules.find(r => r.test.toString() === '/\\.(md)$/i')
-      config.module.rules.splice(config.module.rules.indexOf(rule), 1)
 
-      config.module.rules.push({
-        test: /\.md$/,
-        loader: 'frontmatter-markdown-loader',
-        include: path.resolve(__dirname, 'content'),
-        options: {
-          vue: {
-            root: "dynamicMarkdown"
-          }
-        }
-      });
     }
   },
 
   generate: {
     routes: [
-      '/cn', '404'
+      '404'
     ]
-    .concat(blogsEn.map(w => `/blog/${w}`))
-    .concat(blogsCn.map(w => `cn/blog/${w}`))
   }
 }

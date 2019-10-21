@@ -112,12 +112,7 @@
         components: { TopDapps },
         data(){return {
             LOGOS,
-        }},
-        metaInfo() {
-          return {
-            title: "test",
-          };
-        },
+        }}
 
     }
 
@@ -217,6 +212,7 @@
                 width: 120%;
                 padding:4rem 0 8rem;
                 transform:rotate(-5deg);
+                overflow: hidden;
             }
 
             .web-image {

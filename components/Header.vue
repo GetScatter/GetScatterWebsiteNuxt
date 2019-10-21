@@ -67,6 +67,7 @@
         @media (max-width: $breakpoint-tablet) {
           left:10px;
           top:10px;
+          height:34px;
         }
 
         * {
@@ -99,7 +100,7 @@
         justify-self: end;
 
         @media (max-width: $breakpoint-mobile) {
-            align-self: end;
+            align-self:end;
         }
     }
 
@@ -112,12 +113,12 @@
         z-index:1000;
         background:white;
         padding:6px;
-        border-radius:6px;
+        border-radius:44px;
 
         @media (max-width: $breakpoint-tablet) {
           right:10px;
           top:10px;
-          padding:0px;
+          padding:4px;
         }
 
         @media (max-width: $breakpoint-mobile) {

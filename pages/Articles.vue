@@ -99,6 +99,10 @@
           position: relative;
           background-color:$blue;
 
+          @media (max-width: $breakpoint-tablet) {
+              margin-bottom: 6rem !important;
+          }
+
           img {
             width: 100%;
             opacity: 0.2;
@@ -129,7 +133,6 @@
               width:80%;
               top:18rem;
               bottom:initial;
-              right:initial;
               right:0;
 
             }
@@ -163,7 +166,16 @@
             padding: 4rem;
             box-shadow: 0 10px 16px rgba($blue, 0.12);
 
-            
+            @media (max-width: $breakpoint-tablet) {
+                position:relative !important;
+                padding:2rem;
+                left:initial !important;
+                right:initial !important;
+                bottom:initial !important;
+                top:initial !important;
+                margin:initial !important;
+                width:100% !important;
+            }
           }
         }
 

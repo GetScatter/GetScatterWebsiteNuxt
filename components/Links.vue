@@ -39,8 +39,9 @@
         }
 
         @media (max-width: $breakpoint-mobile) {
-          justify-content: end;
-          width:calc(100vw - 80px);
+          flex-direction:row;
+          display: flex;
+          justify-content: flex-end;
         }
 
         .nav-item {
@@ -53,7 +54,7 @@
 
             @media (max-width: $breakpoint-tablet) {
               margin: 0 .6rem;
-              font-size:$font-size-small;
+              font-size:$font-size-standard;
             }
 
             @media (max-width: $breakpoint-mobile) {

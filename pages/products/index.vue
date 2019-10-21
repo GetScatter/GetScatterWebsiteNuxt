@@ -81,10 +81,17 @@
             width:45%;
             top:4rem;
             right:4rem;
+
+              @media (max-width: $breakpoint-mobile) {
+                  width:60%;
+                  top:2rem;
+                  right:2rem;
+              }
           }
 
           @media (max-width: $breakpoint-tablet) {
               width:100%;
+              margin:0 2rem 2rem;
           }
 
           &.wallets {

@@ -404,7 +404,7 @@ input {
 
 .flex-row {
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   margin:12rem auto;
   max-width: 1080px;
 
@@ -427,7 +427,9 @@ input {
   }
 
   .half {
-    width:50%;
+    width:46%;
+    margin:0 2%;
+    align-items:flex-start;
 
     @media (max-width: $breakpoint-tablet) {
       width:100%;
@@ -440,13 +442,8 @@ input {
     }
 
     img {
-
-      @media (max-width: $breakpoint-tablet) {
-        display:none;
-      }
-
-      width:80%;
-      margin:0 10%;
+      width:100%;
+      margin:0;
     }
   }
 

@@ -3,9 +3,7 @@
     
       <ArticleHeader></ArticleHeader>
       <section class="single-column blog-content">
-        <transition name="fade">
-          <nuxt />
-        </transition>
+        <nuxt />
         <hr>
       </section>
       <ArticleFooter></ArticleFooter>

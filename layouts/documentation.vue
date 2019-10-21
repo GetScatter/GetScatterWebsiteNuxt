@@ -5,9 +5,7 @@
       <section class="documentation-flex">
         <DevLinks></DevLinks>
         <section class="documentation-content">
-          <transition name="fade">
             <nuxt />
-          </transition>
         </section>
       </section>
     

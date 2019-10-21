@@ -47,6 +47,7 @@
         @media (max-width: $breakpoint-mobile) {
           flex-direction:column;
           height: 60px;
+          display:flex;
         }
 
         li a {
@@ -100,7 +101,8 @@
         justify-self: end;
 
         @media (max-width: $breakpoint-mobile) {
-            align-self:end;
+            align-self:flex-end;
+            padding-right:1rem;
         }
     }
 

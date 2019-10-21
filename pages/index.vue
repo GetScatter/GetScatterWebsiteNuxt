@@ -139,6 +139,10 @@
             min-height:auto;
         }
 
+        @media (max-width: $breakpoint-mobile) {
+            margin:0;
+        }
+
         .lead-content {
             width: 50%;
             padding:0 8rem;
@@ -158,7 +162,7 @@
 
             @media (max-width: $breakpoint-mobile) {
                 width: 80%;
-                padding:4rem 0 8rem;
+                padding:0rem;
             }
 
             h1 {
@@ -209,10 +213,10 @@
             }
 
             @media (max-width: $breakpoint-mobile) {
-                width: 120%;
-                padding:4rem 0 8rem;
-                transform:rotate(-5deg);
+                width: 100%;
+                padding:4rem 0 0rem;
                 overflow: hidden;
+                min-height:540px;
             }
 
             .web-image {

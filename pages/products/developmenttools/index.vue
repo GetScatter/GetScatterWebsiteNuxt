@@ -13,7 +13,7 @@
 
         <section class="body" data-aos="fade-up" >
 
-            <div class="single-column">
+            <div class="full-width">
               <div class="flex-row">
                 <a href="https://github.com/GetScatter/scatter-js/" class="half">
                   <img src="@/assets/scatterjs.png">
@@ -82,6 +82,16 @@
       .flex-row {
         align-items:stretch;
         margin:4rem 0;
+
+        @media (max-width: $breakpoint-tablet) {
+          flex-direction:column;
+          margin:0;
+          padding:0;
+
+          .half {
+            margin:2rem 0;
+          }
+        }
 
           a {
             text-decoration:none;

@@ -109,21 +109,14 @@
                 width:20%;
                 margin-bottom:2rem;
 
-                @media (max-width: $breakpoint-small-desktop) {
-                    width:33.3333%;
-                }
-
                 @media (max-width: $breakpoint-tablet) {
-                    width:50%;
-                }
-
-                @media (max-width: $breakpoint-mobile) {
-                    width:100%;
+                    width:46%;
+                    margin:2%;
                 }
 
                 .promoted-app-background {
                     height:140px;
-                    border-radius:20px;
+                    border-radius:10px;
                     background-position:center;
                     background-size: cover;
                     position:relative;

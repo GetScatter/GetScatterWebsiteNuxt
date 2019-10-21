@@ -15,18 +15,16 @@
 
             <div class="single-column">
               <div class="flex-row">
-                <div class="half">
+                <a href="https://github.com/GetScatter/scatter-js/" class="half">
                   <img src="@/assets/scatterjs.png">
                   <h3>ScatterJS</h3>
                   <p>The JavaScript library that hundreds of web applications use to allow users to connect to <router-link to="/wallets">15+ wallets</router-link> (not just ours) on multiple blockchains. Even wrappers like Block.one's UAL and EOS New York's Transit use/support ScatterJS.</p>
-                  <a href="https://github.com/GetScatter/scatter-js/" class="button">Learn more</a>
-                </div>
-                <div class="half">
+                </a>
+                <a href="https://github.com/GetScatter/scatter-sharp" class="half">
                   <img src="@/assets/scattersharp.png">
                   <h3>Scatter Sharp &amp; EOS Sharp</h3>
                   <p>The C# libraries that Unity3d games are using to build blockchain enabled games.</p>
-                  <a href="https://github.com/GetScatter/scatter-sharp" class="button">Learn more</a>
-                </div>
+                </a>
                 
               </div>
 

@@ -53,6 +53,10 @@
     #products {
        h1 {
         margin-top:4rem;
+
+        @media (max-width: $breakpoint-mobile) {
+            margin-top:0rem;
+        }
        }
     }
 
@@ -60,11 +64,14 @@
         display:flex;
         flex-direction:row;
         flex-wrap: wrap;
+        padding:0 2rem;
 
         .product {
           height:50vh;
-          width:50vw;
+          width:calc(50vw - 6rem);
           padding:4rem;
+          margin:2rem;
+          border-radius:10px;
           background-color:$blue;
           transition:box-shadow 0.12s ease-in-out;
           display:flex;

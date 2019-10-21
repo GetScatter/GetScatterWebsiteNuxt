@@ -407,6 +407,7 @@ input {
   align-items:flex-start;
   margin:12rem auto;
   max-width: 1080px;
+  flex-direction: row;
 
   &.thirds {
     align-items:flex-start;
@@ -426,6 +427,10 @@ input {
     margin:0rem;
   }
 
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+  }
+
   .half {
     width:46%;
     margin:0 2%;
@@ -433,6 +438,7 @@ input {
 
     @media (max-width: $breakpoint-tablet) {
       width:100%;
+      margin:0;
     }
 
     &.with-image {

@@ -93,11 +93,6 @@
         padding:0;
         width:100%;
 
-        @media (max-width: $breakpoint-mobile) {
-            padding:0;
-            width:80%;
-        }
-
         .promoted-apps {
             overflow:visible;
             display:flex;
@@ -124,7 +119,7 @@
 
                 .promoted-app-background {
                     height:140px;
-                    border-radius:20px;
+                    border-radius:10px;
                     background-position:center;
                     background-size: cover;
                     position:relative;

@@ -27,11 +27,11 @@
               <p>Hundreds of applications have implemented our libraries to make connecting to wallets and networks easy.</p>
               <img src="../../assets/developmenttools.png">
             </nuxt-link>
-            <nuxt-link class="product promotionalchannels" to="/products/promotionalchannels">
+            <!-- <nuxt-link class="product promotionalchannels" to="/products/promotionalchannels">
               <h2>Promotional Channels</h2>
               <p>We are providing unique experiences and channels for users and apps to find one another.</p>
               <img src="../../assets/promotionalchannels.png">
-            </nuxt-link>
+            </nuxt-link> -->
           </div>
         </section>
 
@@ -68,7 +68,7 @@
 
         .product {
           height:50vh;
-          width:calc(50vw - 6rem);
+          width:calc(33.33% - 4rem);
           padding:4rem;
           margin:2rem;
           border-radius:10px;
@@ -85,7 +85,7 @@
 
           img {
             position:absolute;
-            width:45%;
+            width:50%;
             top:4rem;
             right:4rem;
 
@@ -96,7 +96,7 @@
               }
           }
 
-          @media (max-width: $breakpoint-tablet) {
+          @media (max-width: $breakpoint-small-desktop) {
               width:100%;
               margin:0 2rem 2rem;
           }

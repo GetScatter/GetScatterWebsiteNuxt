@@ -1,9 +1,11 @@
 <template>
   <div>
-    <Header></Header>
-    <Navigation></Navigation>
-    <nuxt />
-    <Footer></Footer>
+    
+      <Header></Header>
+      <Navigation></Navigation>
+        <nuxt /> 
+      <Footer></Footer>
+    
   </div>
 </template>
 

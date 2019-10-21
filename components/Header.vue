@@ -44,6 +44,11 @@
         justify-content:center;
         height:80px;
 
+        @media (max-width: $breakpoint-mobile) {
+          flex-direction:column;
+          height: 60px;
+        }
+
         li a {
             color:$blue;
         }
@@ -62,6 +67,7 @@
         @media (max-width: $breakpoint-tablet) {
           left:10px;
           top:10px;
+          height:34px;
         }
 
         * {
@@ -74,7 +80,7 @@
 
             @media (max-width: $breakpoint-tablet) {
               width:34px;
-            height:34px;
+              height:34px;
             }
 
         }
@@ -92,6 +98,10 @@
 
     .app-links{
         justify-self: end;
+
+        @media (max-width: $breakpoint-mobile) {
+            align-self:end;
+        }
     }
 
     .external-links {
@@ -103,12 +113,17 @@
         z-index:1000;
         background:white;
         padding:6px;
-        border-radius:6px;
+        border-radius:44px;
 
         @media (max-width: $breakpoint-tablet) {
           right:10px;
           top:10px;
-          padding:0px;
+          padding:4px;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+          top:initial;
+          bottom:10px;
         }
 
         a {

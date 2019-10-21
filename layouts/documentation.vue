@@ -1,12 +1,16 @@
 <template>
   <div id="documentation">
-    <DevHeader></DevHeader>
-    <section class="documentation-flex">
-      <DevLinks></DevLinks>
-      <section class="documentation-content">
-        <nuxt />
+    
+      <DevHeader></DevHeader>
+      <section class="documentation-flex">
+        <DevLinks></DevLinks>
+        <section class="documentation-content">
+          <transition name="fade">
+            <nuxt />
+          </transition>
+        </section>
       </section>
-    </section>
+    
   </div>
 </template>
 

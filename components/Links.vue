@@ -3,14 +3,18 @@
       <nuxt-link class="nav-item" to="/products">Products</nuxt-link>
       <nuxt-link class="nav-item" to="/apps">Apps</nuxt-link>
       <nuxt-link class="nav-item" to="/developers">Developers</nuxt-link>
-      <nuxt-link class="nav-item" to="/blog">Blog</nuxt-link>
+      <nuxt-link class="nav-item" to="/articles">Articles</nuxt-link>
+      <!-- <LangSwitcher/> -->
     </nav>
 
 </template>
 
 <script>
 
+    import LangSwitcher from '@/components/LangSwitcher'
+
     export default {
+        components: { LangSwitcher },
         data() {
             return {
               
@@ -34,6 +38,11 @@
           height:54px;
         }
 
+        @media (max-width: $breakpoint-mobile) {
+          justify-content: end;
+          width:calc(100vw - 80px);
+        }
+
         .nav-item {
             margin: 0 1.2rem;
             text-decoration:none;
@@ -44,7 +53,11 @@
 
             @media (max-width: $breakpoint-tablet) {
               margin: 0 .6rem;
-              font-size:$font-size-standard;
+              font-size:$font-size-small;
+            }
+
+            @media (max-width: $breakpoint-mobile) {
+              margin: 0 .6rem;
             }
 
             &.exact-active-link {

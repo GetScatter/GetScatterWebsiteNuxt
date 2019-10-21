@@ -1,9 +1,7 @@
-
-
 <template>
     <header>
 
-        <nuxt-link to="/" class="logo">
+        <nuxt-link to="/articles" class="logo">
             
             <svg class="arrow" width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -18,10 +16,16 @@
                     </g>
                 </g>
             </svg>
-            <h3>Back</h3>
+            <h3>All articles</h3>
         </nuxt-link>
 
-        <h3 class="title">Documentation</h3>
+        <section class="sharing">
+            <a class="twitter-share-button"
+              v-bind:href="href"
+              data-size="large">
+              <span>Share on Twitter</span> <i class="fab fa-twitter-square"></i>
+            </a>
+        </section>
 
     </header>
 </template>
@@ -29,7 +33,14 @@
 <script>
     
     export default {
-        components: { }
+        components: { },
+        computed:{
+            href: function () {
+                console.log(this.$route)
+              var path = 'https://twitter.com/intent/tweet?text=Great%20article%20by%20the%20team%20at%20Scatter - ' + 'https://get-scatter.com' + this.$route.path
+              return path
+            }
+        },
     }
 
 </script>
@@ -43,11 +54,10 @@
     header{
         display:flex;
         flex-direction:row;
-        justify-content: space-between;
+        justify-content:space-between;
         padding:0 2rem;
         height:80px;
         background-color:white;
-        border-bottom:1px solid lighten($blue, 44%);
         align-items:center;
 
         h3 {
@@ -57,11 +67,24 @@
                 font-size:$font-size-standard;
             }
         }
-    }
 
-    .title {
-        text-align:right;
-        color:rgba($grey,0.55);
+        .sharing {
+
+            a {
+                font-size:$font-size-standard;  
+                display:flex; 
+                flex-direction:row;
+                align-items:center;
+                font-weight:bold;
+                text-decoration:none;
+
+                i {
+                    font-size:$font-size-large;  
+                    margin-left: 6px; 
+                }
+            }
+            
+        }
     }
 
     .logo {
@@ -101,8 +124,6 @@
                 color:darken($blue,10%);
             }
         }
-
-        
 
         &:hover #logo-circle {
             stroke:$blue;

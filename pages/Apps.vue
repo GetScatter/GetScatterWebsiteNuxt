@@ -47,11 +47,6 @@
   import Search from '@/components/Search.vue'
 
   export default {
-    metaInfo: {
-      title: "This is Home page",    meta: [
-        { name: "description", content: "Learn coding with our free tutorials" },      { name: "keywords", content: "react,vue,angular" }      //you can also add open graph tags here
-      ]
-    },
     head () {
       return {
         title: 'EOS, Ethereum, and Tron Blockchain apps | Scatter',

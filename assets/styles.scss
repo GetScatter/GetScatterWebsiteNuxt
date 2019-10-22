@@ -117,7 +117,7 @@ h1,h2,h3,h4,h5 {
 h1 {
   font-size:$font-size-huge;
   line-height:calc(#{$font-size-huge} * 1.1);
-  margin-bottom:calc(#{$font-size-huge} * 0.25);
+  margin:4rem 0 1rem;
 
   @media(max-width:$breakpoint-mobile){
     margin-top:0;
@@ -134,7 +134,7 @@ h1 {
 h2 {
   font-size:$font-size-large;
   line-height:calc(#{$font-size-large} * 1.2);
-  margin-bottom:$font-size-large;
+  margin:3rem 0 1rem;
   color:$blue;
 
   @media(max-width:$breakpoint-mobile){
@@ -151,7 +151,7 @@ h2 {
 h3 {
   font-size:$font-size-big;
   line-height:calc(#{$font-size-medium} * 2);
-  margin-bottom:1.953rem;
+  margin:2rem 0 1rem;
   color:darken($blue,20%);
 }
 
@@ -163,7 +163,7 @@ h3 {
 h4 {
   font-size:$font-size-medium;
   line-height:calc(#{$font-size-standard} * 2);
-  margin-bottom:calc(#{$font-size-standard} * 2);
+  margin:2rem 0 1rem;
   color:darken($blue,20%);
 }
 
@@ -869,6 +869,11 @@ section {
     animation: mousewheel 0.6s infinite;
   }
 }
+
+.default-tabs__item {
+  border-bottom:1px solid #AEAEAE;
+}
+
 
 @keyframes mousewheel {
   0% {

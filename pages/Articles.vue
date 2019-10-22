@@ -65,14 +65,18 @@
         htmlAttrs: {
           lang: this.$i18n.locale,
         },
-        meta: [
-          { name: "author", content: "Articles by the Scatter team about EOS, Wallets, Blockchain, and running an open-source business" },
-          { name: "description", property: "og:description", content: this.$t('indexPageHead.description'), hid: "description" },
-          { property: "og:title", content: this.$t('indexPageHead.title') },
-          { property: "og:image", content: this.ogImage },
-          { name: "twitter:description", content: this.$t('indexPageHead.description') },
-          { name: "twitter:image", content: this.ogImage }
-        ]
+        head () {
+          return {
+            title: 'Articles by the team at Scatter',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'Learn more about the EOS, Ethereum, and blockchain ecosystems through articles written by the experienced and knowledgable team at Scatter.'
+              }
+            ]
+          }
+        }
       };
     },
 

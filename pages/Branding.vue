@@ -483,7 +483,19 @@
 <script>
 
     export default {
-        name: 'Branding'
+        name: 'Branding',
+        head () {
+          return {
+            title: 'Branding for Scatter',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'Here you can find logos, colors, and other branding elements for the Scatter open-source wallet and libraries.'
+              }
+            ]
+          }
+        }
     }
 
 </script>

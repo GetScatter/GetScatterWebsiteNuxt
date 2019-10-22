@@ -51,7 +51,10 @@
       return {
         title: 'EOS, Ethereum, and Tron Blockchain apps | Scatter',
         meta: [
-          { hid: 'description', name: 'description', content: 'EOS, Ethereum, and Tron Blockchain applications which support Scatter through the scatter-js library.' }
+          { hid: 'description', 
+            name: 'description', 
+            content: 'EOS, Ethereum, and Tron Blockchain applications which support Scatter through the scatter-js library.'
+          }
         ]
       }
     },

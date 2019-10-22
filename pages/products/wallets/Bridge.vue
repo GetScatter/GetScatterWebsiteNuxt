@@ -141,7 +141,19 @@
 <script>
 
     export default {
-        name: 'Bridge'
+        name: 'Bridge',
+        head () {
+          return {
+            title: 'A keyless, non-custodial web wallet for general users',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'We at Scatter are building the next generation of keyless non-custodial web wallets for connecting to advanced blockchains and networks.'
+              }
+            ]
+          }
+        }
     }
 
 </script>

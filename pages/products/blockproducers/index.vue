@@ -26,7 +26,18 @@
 
     export default {
         name: 'ScatterWallets',
-        components: {  },
+        head () {
+          return {
+            title: 'Block Producer Infrastructure',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'Only the best hardware is used to run our block production node on the EOS Mainnet.'
+              }
+            ]
+          }
+        }
     }
 
 </script>

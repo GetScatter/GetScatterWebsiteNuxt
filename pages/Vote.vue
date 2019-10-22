@@ -167,6 +167,18 @@
 			voting:false,
 			voted:false,
 		}},
+		head () {
+          return {
+            title: 'Vote for Scatter\'s Block Producer',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'Scatter now provides top-notch infrastructure on EOS Mainnet, and we would appriate your vote! :)'
+              }
+            ]
+          }
+        },
 		computed:{
 			identity(){
 				if(!this.scatter) return;

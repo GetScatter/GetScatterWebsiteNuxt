@@ -51,7 +51,19 @@
 
 <script>
 export default {
-  name: 'Vision'
+  name: 'Vision',
+  head () {
+          return {
+            title: 'Our vision for Scatter',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'Scatter is ever growing and changing as we try to find our market fit and user base.'
+              }
+            ]
+          }
+        }
 }
 
 </script>

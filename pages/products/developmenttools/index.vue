@@ -66,8 +66,19 @@
 <script>
 
     export default {
-        name: 'Products',
-        components: { },
+        name: 'Development Tools',
+        head () {
+          return {
+            title: 'Development tools that Scatter builds',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'Scatter provides developers with many great libraries for connecting to advanced blockchain networks, with ScatterJS and ScatterSharp being the most widely used.'
+              }
+            ]
+          }
+        }
     }
 
 </script>

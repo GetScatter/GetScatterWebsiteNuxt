@@ -75,8 +75,8 @@
                         
                 
                 <h3>Networks</h3>
-                <p>Development of new side-chains and sister chains continues at breakneck speed. We believe that the future of the market lies in accessing multiple networks on multiple blockchains and we are ready for that now.</p>
-                    
+                <p>Development of new side-chains and sister chains continues at breakneck speed. We believe that the future of the market lies in accessing multiple networks on multiple blockchains and we are ready for that now. To add your network to our wallets, simply fork and do a pull-request to our github repository <a href="https://github.com/GetScatter/ScatterNetworks">ScatterNetworks.</a></p>
+                
                 <section class="blockchains_flex">
                     <article>
                         <svg width="76px" height="82px" viewBox="0 0 76 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -151,7 +151,18 @@
 
     export default {
         name: 'Connect',
-        components: {  },
+        head () {
+          return {
+            title: 'Connecting to blockchains and networks with Scatter',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'Scatter, an open-source blockchain wallet and library system allows developers and users to easily connect to many blockchains and wallets.'
+              }
+            ]
+          }
+        }
     }
 
 </script>
@@ -181,6 +192,7 @@
 
         article {
             text-align:center;
+            margin-bottom:2rem;
         }
 
         h5 {

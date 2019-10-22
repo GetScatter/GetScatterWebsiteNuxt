@@ -36,7 +36,19 @@
 <script>
 
     export default {
-        name: 'Founders'
+        name: 'Founders',
+        head () {
+          return {
+            title: 'Team Scatter',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'The team at Scatter is Nathan S. James and Amiram S. James, two brothers with a passion for software development on the cutting edge.'
+              }
+            ]
+          }
+        }
     }
 
 </script>

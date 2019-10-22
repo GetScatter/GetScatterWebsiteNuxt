@@ -85,7 +85,19 @@
 <script>
 
     export default {
-        name: 'Founders'
+        name: 'Partners',
+        head () {
+          return {
+            title: 'Partner wallets who use Scatter protocols',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'Scatter, an open-source blockchain wallet and library system allows developers and users to easily connect to many wallets.'
+              }
+            ]
+          }
+        }
     }
 
 </script>

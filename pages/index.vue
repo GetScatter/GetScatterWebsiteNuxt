@@ -28,28 +28,11 @@
                 <img src="../assets/voteforus.png">
             </nuxt-link>
         </section>
-        <!-- <section class="full-width" data-aos="fade-up">
-            <TopDapps></TopDapps>
-        </section> -->
-        <!-- <section class="full-width" id="to-do" data-aos="fade-up">
-            <section class="half-width" id="bridge-box">
-                <h3>Scatter Bridge</h3>
-                <h5>Our web wallet is coming soon</h5>
-                <img src="../assets/scatter_simple_apps.png">
-                <a href="https://mailchi.mp/get-scatter.com/scatterbridge" alt="Sign up to be notified" class="button button-small">Sign up to be notified</a>
-            </section>
-            <section class="half-width" id="vote">
-                <h3>Vote for Scatter</h3>
-                <h5>Our block producer canditate is live</h5>
-                <img src="../assets/vote.png">
-                <router-link to="/vote" class="button button-small">Learn more</router-link>
-            </section>
-        </section> -->
         <section class="full-width standard-padding" id="blockchain-for-everyone" data-aos="fade-up">
             <section class="half-width">
                 <h1>Blockchain for everyone</h1>
                 <h3>Connecting to decentralized apps is hard. Most people don’t have the time to learn all the concepts necessary to make it safe to store their assets digitally. Let us show you how easy it can be.</h3>
-                <router-link to="/bridge" alt="Learn more about Bridge" class="button">LEARN MORE ABOUT BRIDGE</router-link>
+                <router-link to="products/wallets/bridge" alt="Learn more about Bridge" class="button">LEARN MORE ABOUT BRIDGE</router-link>
             </section>
             <section class="half-width">
                 <img src="../assets/scatter_simple_start_people.png">

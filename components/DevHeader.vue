@@ -47,7 +47,7 @@
         padding:0 2rem;
         height:80px;
         background-color:white;
-        border-bottom:1px solid lighten($blue, 44%);
+        border-bottom:1px solid lighten($blue, 24%);
         align-items:center;
 
         h3 {

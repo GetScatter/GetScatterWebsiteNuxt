@@ -4,10 +4,7 @@
       <div class="single-column">
         <nuxt-link to="/products" class="button button-default button-small">Back to Products</nuxt-link>
         <h1>Our Wallets</h1>
-        <h3>Our feature-rich wallets are known for their advanced functionality which allows users with deep 
-            know-how of blockchain technologies to leverage them today.</h3>
-        <h3>As we are on the cutting edge, it is our privilege to push forward the concept of what defines the 
-            experiences of what a wallet can be beyond just a place to store your digital assets.</h3>
+        <h3>It is our privilege to push forward the concept of what a wallet can be, beyond just a place to store your digital assets.</h3>
 
 
         <tabs
@@ -44,8 +41,10 @@
         data () {
           return {
             wallettabs: [
-              { title: 'Scatter Desktop', value: 'desktop' },
-              { title: 'Scatter Bridge', value: 'bridge' }
+              { title: 'Desktop', value: 'desktop' },
+              // { title: 'Extension', value: 'extension' },
+              // { title: 'Mobile', value: 'mobile' },
+              { title: 'Bridge', value: 'bridge' }
             ],
         currentTab: 'desktop',
           }

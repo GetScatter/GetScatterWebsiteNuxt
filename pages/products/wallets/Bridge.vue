@@ -43,7 +43,7 @@
               </p>
               
             
-              <svg width="354px" height="176px" viewBox="0 0 354 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg class="illustration" width="354px" height="176px" viewBox="0 0 354 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="gs_features_stablecoins-copy" transform="translate(-212.000000, -479.000000)">
                         <g id="Group-21" transform="translate(213.000000, 480.000000)">
@@ -180,7 +180,7 @@
             }
         }
 
-        .body svg {
+        svg.illustration {
           width:100%;
           margin:6rem 0;
         }

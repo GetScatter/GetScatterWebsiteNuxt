@@ -95,6 +95,18 @@
         data(){return {
 	        release:{},
         }},
+        head () {
+          return {
+            title: 'Download Scatter Desktop for Windows, Mac, and Linux',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'It is critical that you only download Scatter from us! Any other provider is untrustworthy and likely will steal your private keys and the associated accounts.'
+              }
+            ]
+          }
+        },
         computed:{
             details(){
             	if(!this.release.details) return [];

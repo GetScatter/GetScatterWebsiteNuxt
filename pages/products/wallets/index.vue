@@ -2,8 +2,9 @@
     <div id="wallets">
 
         <section class="body" data-aos="fade-up" >
-          <div class="body-text">
+          <div class="">
             <div class="single-column">
+              <nuxt-link to="/products" class="button button-default button-small">Back to Products</nuxt-link>
               <h1>Our Wallets</h1>
               <h3>Our feature-rich wallets are known for their advanced functionality which allows users with deep 
                   know-how of blockchain technologies to leverage them today.</h3>
@@ -116,7 +117,7 @@
         text-align:left;
 
         h1 {
-          margin-top:4rem;
+          margin:1rem 0 2rem 0 !important;
         }
 
     }

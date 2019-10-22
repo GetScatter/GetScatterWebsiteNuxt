@@ -4,6 +4,7 @@
         <section class="body" data-aos="fade-up" >
           <div class="body-text">
             <div class="single-column">
+              <nuxt-link to="/" class="button button-default button-small">Back home</nuxt-link>
               <h1>Scatter is a leading provider of blockchain technology</h1>
               <h3>Our mission is to connect developers and users to cutting edge technologies so that they can benefit from the most important features of decentralization such as real ownership, security, and privacy.</h3>
             </div>
@@ -52,7 +53,7 @@
 
     #products {
        h1 {
-        margin-top:4rem;
+        margin:1rem 0 2rem 0;
 
         @media (max-width: $breakpoint-mobile) {
             margin-top:0rem;
@@ -83,22 +84,43 @@
           background-repeat:no-repeat;
           position:relative;
 
+          @media (max-width: $breakpoint-mobile) {
+            padding:2rem;
+          }
+
           img {
             position:absolute;
-            width:50%;
+            width:60%;
             top:4rem;
             right:4rem;
 
-              @media (max-width: $breakpoint-mobile) {
-                  width:60%;
+              @media (max-width: $breakpoint-small-desktop) {
+                  width:40%;
                   top:2rem;
                   right:2rem;
+              }
+
+              @media (max-width: $breakpoint-tablet) {
+                  width:35%;
+                  top:2rem;
+                  right:2rem;
+              }
+
+              @media (max-width: $breakpoint-mobile) {
+                  width:50%;
+                  top:1rem;
+                  right:1rem;
               }
           }
 
           @media (max-width: $breakpoint-small-desktop) {
               width:100%;
               margin:0 2rem 2rem;
+          }
+
+          @media (max-width: $breakpoint-tablet) {
+              width:100%;
+              margin:0 0rem 2rem;
           }
 
           &.wallets {

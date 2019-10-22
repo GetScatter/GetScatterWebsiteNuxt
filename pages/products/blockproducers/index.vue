@@ -4,6 +4,7 @@
         <section class="body" data-aos="fade-up" >
           <div class="body-text">
             <div class="single-column">
+              <nuxt-link to="/products" class="button button-default button-small">Back to Products</nuxt-link>
               <h1>Our Infrastructure</h1>
               <h3>We believe that providing custom implementations of blockchain infrastructure brings with it great value
                   for the open-source community, and for our clients. By running our own nodes, load balancers, and APIs, we
@@ -32,12 +33,12 @@
 <style lang="scss">
     @import "@/assets/_variables.scss";
 
-    #wallets {
+    #blockproducers {
         background-color:white;
         text-align:left;
 
         h1 {
-          margin-top:4rem;
+          margin:1rem 0 2rem 0;
         }
 
     }

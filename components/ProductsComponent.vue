@@ -55,9 +55,8 @@
               flex-direction:column;
               justify-content:flex-end;
               text-decoration: none !important;
-              background-size:cover;
-              background-position:top right;
-              background-repeat:no-repeat;
+              background-position:left top;
+              background-image:url('../assets/nebula_bg.jpg');
               position:relative;
 
               @media (max-width: $breakpoint-mobile) {
@@ -101,23 +100,19 @@
               }
 
               &.wallets {
-                background-color:darken($blue,1%);
-                background-image:url('../assets/zigzag.png');
+                background-position:right top;
               }
 
               &.developmenttools {
-                background-color:darken($blue,5%);
-                background-image:url('../assets/circles.png');
+                background-position:center top;
               }
 
               &.blockproducers {
-                background-color:darken($blue,3%);
-                background-image:url('../assets/wiggles.png');
+                background-position:left bottom;
               }
 
               &.promotionalchannels {
-                background-color:darken($blue,8%);
-                background-image:url('../assets/lines.png');
+                background-position:left top;
               }
 
               &:hover {

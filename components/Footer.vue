@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
-    
+    <hr>
     <section class="footer-links">
         <nav>
             <nuxt-link to="/">Home</nuxt-link>

@@ -1,16 +1,115 @@
 <template>
     <div id="home">
         <section id="lead-in" data-aos="fade-up">
+            <div class='wrap'>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+              <div class='tri'></div>
+            </div>
             <section class="lead-content">
-                <div class="container">
-                    <h1>
-                        Your blockchain wallet
-                    </h1>
-                    <h3>
-                        Scatter Desktop is an <a href="https://github.com/GetScatter">open-source</a> wallet for your digital currencies and assets. <hr><span>Available now for Windows, MacOS, and Linux.</span>
-                    </h3>
-                    <nuxt-link to="/download" alt="Get Started" class="button">Download Scatter Desktop</nuxt-link>
-                </div>
+                <h1>
+                    The advanced blockchain wallet you need
+                </h1>
+                <h3>
+                    Scatter Desktop is an <a href="https://github.com/GetScatter">open-source</a> wallet for your digital currencies and assets. 
+                    <hr>
+                    <span>Available now for Windows, MacOS, and Linux.</span>
+                </h3>
+                <nuxt-link to="/download" alt="Get Started" class="button">Download Scatter Desktop</nuxt-link>
             </section>
             <section class="lead-images">
                 <div class="web-image">
@@ -21,13 +120,18 @@
                 </div>
             </section>
         </section>
-        <section class="full-width" data-aos="fade-up">
+        <section class="maximum-width">
+            <ProductsComponent></ProductsComponent>
+        </section>
+        <hr>
+        <section class="single-column" data-aos="fade-up">
             <nuxt-link to="/vote" id="vote">
-                <h3>Vote for Scatter's Block Producer</h3>
-                <h5>It is your votes that keep our project running. Make sure to head over to our voting page right now and vote for our block producer!</h5>
-                <img src="../assets/voteforus.png">
+                <img src="../assets/love.png" class="loveme">
+                <h1>Vote for <br>Scatter's Block Producer</h1>
+                <h3>It is your votes that keep our project running. Make sure to head over to our voting page right now and vote for our block producer!</h3>
             </nuxt-link>
         </section>
+        <hr>
         <section class="full-width standard-padding" id="blockchain-for-everyone" data-aos="fade-up">
             <section class="half-width">
                 <h1>Blockchain for everyone</h1>
@@ -45,7 +149,7 @@
             <section class="half-width">
                 <h1>Empowering Developers</h1>
                 <h3>We’re certain that your users will love how slick, sleek, and simple Scatter Bridge is to use. Our SDKs are straightforward to integrate into your web, mobile, Unity, and Unreal applications.</h3>
-                <router-link to="/docs/getting-started" alt="READ OUR DOCUMENTATION" class="button">READ OUR DOCUMENTATION</router-link>
+                <router-link to="/developers" alt="READ OUR DOCUMENTATION" class="button">READ OUR DOCUMENTATION</router-link>
             </section>
         </section>
         <section class="full-width standard-padding" id="card-set" data-aos="fade-up">
@@ -85,6 +189,7 @@
 
 <script>
     import TopDapps from '@/components/TopDapps.vue'
+    import ProductsComponent from '@/components/ProductsComponent'
 
     const LOGOS = [
         {url:''}
@@ -92,7 +197,7 @@
 
     export default {
         name: 'Home',
-        components: { TopDapps },
+        components: { TopDapps, ProductsComponent },
         data(){return {
             LOGOS,
         }}
@@ -105,17 +210,56 @@
 
     @import "@/assets/_variables.scss";
 
+    $total: 200;
+    $time: 10s;
+
     #lead-in {
         display:flex;
         flex-direction:row;
         align-items:center;
-        margin:0 auto 4rem;
-        background-image:url('../assets/scatter_leadin_bg.png');
+        margin:2.6rem auto 4rem;
+        background-image:url('../assets/nebula_bg.jpg');
         background-position:center right;
         background-repeat:no-repeat;
-        background-size:80%;
+        background-size:cover;
         width: 100%;
-        min-height:800px;
+        min-height:880px;
+        overflow:hidden;
+
+        .wrap {
+            transform-style: preserve-3d;
+            perspective: 1800px;
+        }
+
+        .tri {
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+        }
+
+        @for $i from 1 through $total {
+            $size: random(10) * 1px;
+            $rotate: random(360) * 1deg;
+            .tri:nth-child(#{$i}){
+                border: $size solid rgba(lighten($blue, 30%),random(1));
+                border-radius:50%;
+                margin-left: -$size/2;
+                margin-top: -$size/2;
+                transform: rotate($rotate) translate3d(0,0,-1500px) scale(0);
+                animation: anim#{$i} $time infinite linear;
+                animation-delay: $i * -($time/$total);
+                opacity: 0;
+            }
+            
+            @keyframes anim#{$i}{
+                0% {
+                    opacity: 0.35;
+                    transform: rotate($rotate * 1.5) translate3d(random(1000) * 1px, random(1000) * 1px,1000px) scale(1);
+                }
+            }
+        }
 
         @media (max-width: $single-column) {
             flex-direction:column;
@@ -131,8 +275,9 @@
             padding:0 8rem;
             
             display:flex;
-            flex-direction:row;
-            align-items:center;
+            flex-direction:column;
+            align-items:flex-start;
+            justify-content:center;
 
             @media (min-width: $breakpoint-large-desktop) {
                 padding:0 8rem 0 16rem;
@@ -149,7 +294,8 @@
             }
 
             h1 {
-                margin-top:-16rem;
+                margin-top:0;
+                color:white;
 
                 @media (max-width: $single-column) {
                     margin:6rem 0 2rem;
@@ -157,18 +303,23 @@
             }
 
             h3 {
-                color:$grey;
-                font-size: $font-size-standard;
-                line-height: 20px;
+                color:white;
+                line-height: 24px;
+                margin-bottom:2rem;
                 
-                span {
-                    color:black;
+                span, a {
+                    color:white;
                 }   
+
+                span {
+                    font-size:$font-size-standard;
+                    opacity:0.6;
+                }
             }
 
             hr {
                 margin:1.5rem 0;
-                width:50%;
+                opacity:0.24;
             }
 
             .button {
@@ -203,7 +354,7 @@
             }
 
             .web-image {
-                min-height:800px;
+                min-height:680px;
                 width: 50vw;
                 display:flex;
                 align-items:center;
@@ -216,6 +367,7 @@
                 img {
                     overflow:hidden;
                     border-radius:6px;
+                    border:1px solid rgba(255,255,255,0.72);
                     box-shadow: 0 10px 20px 0 rgba(7,83,123,0.19);
                     height:40%;
                     position: absolute;
@@ -238,7 +390,7 @@
                     width:auto;
                     position:absolute;
                     right:-3vw;
-                    top:20vh;
+                    top:15vh;
                     overflow:hidden;
                     border-radius:6px;
                     box-shadow: 0 10px 20px 0 rgba(7,83,123,0.39);
@@ -339,59 +491,21 @@
 
     #vote {
         text-align:center;
-        border-radius:20px;
-        background:$blue;
-        border-radius:20px;
-        background-image:url('../assets/gs_mobile_apps_homebg.png');
         background-position: center bottom;
         background-repeat:no-repeat;
-        padding:8rem;
         position:relative;
-        overflow:hidden;
         margin:0 0 6rem;
         text-decoration:none !important;
+        display:flex;
+        flex-direction:column;
+        padding:4rem;
+        border-radius:20px;
+        transition:background-color 0.12s ease-in-out;
 
-        @media (max-width: $breakpoint-tablet) {
-            padding:4rem;
-            border-radius:0;
+        &:hover {
+          background-color:lighten($blue,44%);
         }
 
-
-        h3 {
-            color:white;
-            margin-bottom:1rem;
-            font-size:$font-size-large;
-        }
-
-        h5 {
-            color:white;
-            opacity:0.7;
-            font-size:$font-size-medium;
-        }
-
-        img {
-            margin-top:-2rem;
-            max-width: calc(100% - 4rem);
-        }
-
-        .button {
-            position:absolute;
-            z-index:4;
-            box-shadow: 0 10px 20px 0 rgba(7,83,123,0.39);
-            left:8rem;
-            right:8rem;
-            bottom:2rem;
-            background:white;
-            color:$blue;
-            max-width: calc(100% - 16rem);
-            transition:all 0.12s ease-in-out;
-
-            @media (max-width: $breakpoint-tablet) {
-                left:4rem;
-                right:4rem;
-                max-width: calc(100% - 8rem);
-            }
-        }
     }
 
     #blockchain-for-everyone {

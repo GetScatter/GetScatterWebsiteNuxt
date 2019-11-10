@@ -63,9 +63,9 @@
       return {
         Apps: [],
         tabs: [
-          { title: 'Explore', value: 'explore' },
+          { title: this.$i18n.t('apps.explore'), value: 'explore' },
           // { title: 'New', value: 'new' },
-          { title: 'Search', value: 'search' }
+          { title: this.$i18n.t('apps.search'), value: 'search' }
         ],
     currentTab: 'explore',
       }

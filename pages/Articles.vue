@@ -2,51 +2,51 @@
   <section class="pressarticles">
         <div class="single-column">
 
-          <nuxt-link to="/articles/why-we-build-on-eosio" class="article-card" data-aos="slide-up">
+          <nuxt-link :to="localePath('why-we-build-on-eosio')" class="article-card" data-aos="slide-up">
             <img src="@/assets/images/blog/why-we-build-on-EOSIO/choose.png">
             <section class="content" data-aos="flip-left">
-              <h2>Why we build on EOSIO</h2>
-              <h4>Ledger technology advances quickly, and Scatter has placed a large bet that EOSIO technology may be one of the top contenders going forward. Let's break down why we think so.</h4>
+              <h2>{{ $t("articles.whywebuildoneosio.title") }}</h2>
+              <h4>{{ $t("articles.whywebuildoneosio.summary") }}</h4>
             </section>
           </nuxt-link>
 
-          <nuxt-link to="/articles/an-adhoc-poll-about-keeping-your-EOS-tokens-on-exchanges" class="article-card type-one" data-aos="slide-up">
+          <nuxt-link :to="localePath('an-adhoc-poll-about-keeping-your-EOS-tokens-on-exchanges')" class="article-card type-one" data-aos="slide-up">
             <img src="@/assets/images/blog/an-adhoc-poll-about-keeping-your-EOS-tokens-on-exchanges/quiz.png">
             <section class="content" data-aos="flip-left">
-              <h2>An adhoc poll about keeping your EOS tokens on exchanges</h2>
-              <h4>It's important to be objective in our opinions on how complex systems work. We ran an adhoc poll to learn a bit more about how our users store their digital assets.</h4>
+              <h2>{{ $t("articles.adhocpoll.title") }}</h2>
+              <h4>{{ $t("articles.adhocpoll.summary") }}</h4>
             </section>
           </nuxt-link>
 
           <nuxt-link to="/articles/scatter-embed-one-codebase-many-wallets" class="article-card type-two" data-aos="slide-up">
             <img src="@/assets/images/blog/scatter-embed-one-codebase-many-wallets/embed.png">
             <section class="content" data-aos="flip-left">
-              <h2>Scatter Embed - one codebase, many wallets</h2>
-              <h4>We've taken a big step forward with the architecture of our wallets, and we'd like to introduce you to Walletpack which is our open-source blockchain wallet library.</h4>
+              <h2>{{ $t("articles.scatterembed.title") }}</h2>
+              <h4>{{ $t("articles.scatterembed.summary") }}</h4>
             </section>
           </nuxt-link>
 
           <nuxt-link to="/articles/scatter-releases-a-block-producer-candidate" class="article-card type-three" data-aos="slide-up">
             <img src="@/assets/images/blog/scatter-releases-a-block-producer-candidate/bp_candidate.png">
             <section class="content" data-aos="flip-left">
-              <h2>Scatter releases a Block Producer candidate</h2>
-              <h4>This is our love letter to the EOS community. We want all of you to know how important each and every one of you are to us. Scatter is a community, and we are all in this together.</h4>
+              <h2>{{ $t("articles.scattersblockproducer.title") }}</h2>
+              <h4>{{ $t("articles.scattersblockproducer.summary") }}</h4>
             </section>
           </nuxt-link>
 
           <nuxt-link to="/articles/about-wallets-SDKs-and-trust-on-the-blockchain" class="article-card" data-aos="slide-up">
             <img src="@/assets/images/blog/about-wallets-SDKs-and-trust-on-the-blockchain/1_7xDknqWLDZ7w4j2D0JNWAA.png">
             <section class="content" data-aos="flip-left">
-              <h2>About Wallets, SDKs, and trust on the blockchain</h2>
-              <h4>Let's dive a little deeper into how these complex systems work together to create new experiences and opportunities.</h4>
+              <h2>{{ $t("articles.walletsandsdks.title") }}</h2>
+              <h4>{{ $t("articles.walletsandsdks.summary") }}</h4>
             </section>
           </nuxt-link>
 
           <nuxt-link to="/articles/about-keys-keypairs-and-accounts" class="article-card type-one" data-aos="slide-up">
             <img src="@/assets/images/blog/about-keys-keypairs-and-accounts/image_1.png">
             <section class="content" data-aos="flip-left">
-              <h2>About Keys, Keypairs, and Accounts on EOSIO</h2>
-              <h4>Some of the fundamentals of smart contract platforms can be hard to grasp, so we have put together a quick primer.</h4>
+              <h2>{{ $t("articles.keypairsandaccouts.title") }}</h2>
+              <h4>{{ $t("articles.keypairsandaccouts.summary") }}</h4>
             </section>
           </nuxt-link>
         
@@ -58,13 +58,9 @@
 <script>
 
   export default {
-    
+    name: "articles",
     head () {
       return {
-        title: this.$t('indexPageHead.title'),
-        htmlAttrs: {
-          lang: this.$i18n.locale,
-        },
         head () {
           return {
             title: 'Articles by the team at Scatter',

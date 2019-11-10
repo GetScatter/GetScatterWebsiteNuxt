@@ -4,15 +4,15 @@
     <hr>
     <section class="footer-links">
         <nav>
-            <nuxt-link to="/">Home</nuxt-link>
-            <nuxt-link to="/products">Products</nuxt-link>
-            <nuxt-link to="/developers">Developers</nuxt-link>
-            <nuxt-link to="/vote">Vote</nuxt-link>
-            <nuxt-link to="/connect">Connect</nuxt-link>
-            <nuxt-link to="/vision">Vision</nuxt-link>
-            <a href="https://support.get-scatter.com" title="Get the help you need">Support</a>
-            <nuxt-link to="/partners">Partners</nuxt-link>
-            <nuxt-link to="/founders">Founders</nuxt-link>
+            <nuxt-link :to="localePath('index')">{{ $t("footer.links.home") }}</nuxt-link>
+            <nuxt-link :to="localePath('products')">{{ $t("footer.links.products") }}</nuxt-link>
+            <nuxt-link :to="localePath('developers')">{{ $t("footer.links.developers") }}</nuxt-link>
+            <nuxt-link :to="localePath('vote')">{{ $t("footer.links.vote") }}</nuxt-link>
+            <!-- <nuxt-link :to="localePath('connect')">{{ $t("footer.links.connect") }}</nuxt-link> -->
+            <!-- <nuxt-link :to="localePath('vision')">{{ $t("footer.links.vision") }}</nuxt-link> -->
+            <a href="https://support.get-scatter.com" title="Get the help you need">{{ $t("footer.links.support") }}</a>
+            <nuxt-link :to="localePath('partners')">{{ $t("footer.links.partners") }}</nuxt-link>
+            <nuxt-link :to="localePath('founders')">{{ $t("footer.links.founders") }}</nuxt-link>
         </nav>
     </section>
 
@@ -36,12 +36,12 @@
             </g>
         </svg>
         <span>
-            The power to safely manage your digital life
+            {{ $t("footer.tagline") }}
         </span>
-        <nuxt-link to="/download" class="button">Download Scatter Desktop</nuxt-link>
+        <nuxt-link :to="localePath('download')" class="button">{{ $t("footer.download") }}</nuxt-link>
     </section>
     <section class="body">
-        Copyright © 2017-2019 GetScatter, Ltd.
+        {{ $t("footer.copyright") }}
     </section>
   </div>
 </template>

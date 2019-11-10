@@ -2,9 +2,9 @@
   <div id="wallets">
     <section class="body" data-aos="fade-up" >
       <div class="single-column">
-        <nuxt-link to="/products" class="button button-default button-small">Back to Products</nuxt-link>
-        <h1>Our Wallets</h1>
-        <h3>It is our privilege to push forward the concept of what a wallet can be, beyond just a place to store your digital assets.</h3>
+        <nuxt-link :to="localePath('products')" class="button button-default button-small">{{ $t('products.backtoproducts') }}</nuxt-link>
+        <h1>{{ $t('wallets.title') }}</h1>
+        <h3>{{ $t('wallets.information') }}</h3>
 
 
         <tabs

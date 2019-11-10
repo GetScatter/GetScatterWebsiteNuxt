@@ -34,12 +34,11 @@
       <section class="body" data-aos="fade-up" >
             <div class="single-column"> 
 
-              <h2 data-aos="fade-up">The only thing your users will need in order to use your decentralized application is an email address, a mobile phone number, or a social account like Facebook or Google.</h2>
+              <h2 data-aos="fade-up">{{ $t('wallets.bridge.intro') }}</h2>
                 
-              <h4>We understand that all wallets are roadblocks to mass adoption&mdash;even Scatter. We have a solution.</h4>
+              <h4>{{ $t('wallets.bridge.subsection') }}</h4>
               <p>
-                  Our SDKs offer a fallback service called <b>Scatter Bridge</b> that facilitates a blockchain-less experience
-                  for your users, without any modifications to your existing code if your users don't have any compatible wallets.
+                  {{ $t('wallets.bridge.sdks') }}
               </p>
               
             
@@ -85,52 +84,37 @@
                 </g>
               </svg>    
               
-              <h1>Anytime, anywhere.</h1>
+              <h1>{{ $t('wallets.bridge.anytime') }}</h1>
               <p>
-                Because Scatter Bridge is a fully custodial service it allows users to use apps with their accounts <b>anywhere</b>.
-                That means they can use it on their laptops, desktops, mobile phones, or even a smart watch.
+                {{ $t('wallets.bridge.anytimetext') }}
               </p>
             
-              <h2>Go global.</h2>
+              <h2>{{ $t('wallets.bridge.goglobal') }}</h2>
               <p>
-                  Unlike other alternatives, the user's account isn't only available in that one application&mdash;it is a global account that they
-                  can use on all Scatter supported apps. The barrier to entry for a user simply disappears.
+                  {{ $t('wallets.bridge.goglobaltext') }}
               </p>
 
 
-              <h2>Safety &amp; Limits.</h2>
+              <h2>{{ $t('wallets.bridge.safety') }}</h2>
               <p>
-                  Most bridge accounts (depending on blockchain) are multi-sig accounts. We control one key and the user controls the other key.
-                  Users can recover their keys if they lose them at any point in time using their original registration method.
+                  {{ $t('wallets.bridge.safetytext1') }}
               </p>
               <p>
-                  Since Bridge is a fully custodial service we impose holding and spending limitations during a given time-frame.
-                  This makes it so accounts can't be "cleaned out" by someone who has gotten a hold of your Facebook account for example, and also pushes users
-                  to learn about blockchain and move to a safer non-custodial platform like Scatter Desktop.
+                  {{ $t('wallets.bridge.safetytext2') }}
               </p>
               <p>
-                  When logging into each app you also set your own limitations on it to ensure that an application never has more access to
-                  your account or it's assets than you are willing to give it.
+                  {{ $t('wallets.bridge.safetytext3') }}
               </p>
 
             
-              <h2>Bridge accounts are easy to fund</h2>
+              <h2>{{ $t('wallets.bridge.easytofund') }}</h2>
               <p>
-                  Each Bridge account is an actual blockchain account/address. These aren't fake accounts waiting to be created, but
-                  fully functional ones. You can easily send funds to your accounts from <b>any exchange</b>.
+                  {{ $t('wallets.bridge.easytofundtext') }}
               </p>
 
-              <h2>Take ownership.</h2>
+              <h2>{{ $t('wallets.bridge.ownership') }}.</h2>
               <p>
-                  The goal of the Scatter Bridge service isn't to keep users using the service. Instead, it is meant as the middle-ground between
-                  first using a blockchain and learning about how to keep your assets safe.
-              </p>
-              <p>
-                  We believe the best way to educate users about blockchain is to get them using it first, and give them a reason to educate themselves.</b>
-              </p>
-              <p>
-                  We offer clear and easy steps that a user can take to export their accounts from bridge right into Scatter Desktop with a single file once they
-                  are ready to take the leap to full ownership of their private keys.
+                  {{ $t('wallets.bridge.ownershiptext') }}.
               </p>
             </div>
 

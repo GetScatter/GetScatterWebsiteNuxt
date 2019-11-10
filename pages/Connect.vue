@@ -151,6 +151,9 @@
 
     export default {
         name: 'Connect',
+        htmlAttrs: {
+          lang: this.$i18n.locale,
+        },
         head () {
           return {
             title: 'Connecting to blockchains and networks with Scatter',

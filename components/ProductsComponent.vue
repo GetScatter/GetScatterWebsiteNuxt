@@ -1,19 +1,19 @@
 <template>
     <section class="maximum-width" data-aos="fade-up" >
       <div class="products">
-        <nuxt-link class="product wallets" to="/products/wallets">
-          <h2>Scatter Wallets</h2>
-          <p>Scatter's forte has always been to be at the cutting edge of defining what a wallet can be.</p>
+        <nuxt-link class="product wallets" :to="localePath('products-wallets')">
+          <h2>{{ $t("productscomponent.wallets.title") }}</h2>
+          <p>{{ $t("productscomponent.wallets.description") }}</p>
           <img src="@/assets/wallets.png">
         </nuxt-link>
-        <nuxt-link class="product blockproducers" to="/products/blockproducers">
-          <h2>Block Production</h2>
-          <p>With our node on EOS Mainnet, we have a proven technical foothold in infrastructure.</p>
+        <nuxt-link class="product blockproducers" :to="localePath('products-blockproducers')">
+          <h2>{{ $t("productscomponent.blockproduction.title") }}</h2>
+          <p>{{ $t("productscomponent.blockproduction.description") }}</p>
           <img src="@/assets/blockproducers.png">
         </nuxt-link>
-        <nuxt-link class="product developmenttools" to="/products/developmenttools">
-          <h2>Development Tools</h2>
-          <p>Hundreds of applications have implemented our libraries to make connecting to wallets and networks easy.</p>
+        <nuxt-link class="product developmenttools" :to="localePath('products-developmenttools')">
+          <h2>{{ $t("productscomponent.developmenttools.title") }}</h2>
+          <p>{{ $t("productscomponent.developmenttools.description") }}</p>
           <img src="@/assets/developmenttools.png">
         </nuxt-link>
         <!-- <nuxt-link class="product promotionalchannels" to="/products/promotionalchannels">
@@ -52,6 +52,7 @@
               background-color:$blue;
               transition:box-shadow 0.12s ease-in-out;
               display:flex;
+              text-align:left;
               flex-direction:column;
               justify-content:flex-end;
               text-decoration: none !important;

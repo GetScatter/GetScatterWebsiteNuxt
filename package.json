@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@nuxt/webpack": "^2.10.1",
-    "@nuxtjs/markdownit": "^1.2.7",
     "@scatterjs/core": "^2.7.45",
     "@scatterjs/eosjs2": "^1.5.27",
     "aos": "^2.3.4",

@@ -34,12 +34,9 @@
         <section class="body" data-aos="fade-up" >
           <div class="body-text">
             <div class="single-column">              
-              <h4>With the completion of months of work integrating our new <a href="https://github.com/GetScatter/walletpack/">
-                  Walletpack library</a>, Scatter Desktop is better than ever. The built-in application explorer will help you 
-                  discover new and exciting experiences possible only on the blockchain. Key management is easier than ever, 
-                  and with a little know-how you can keep your keys and accounts safe forever.</h4>
+              <h4 v-html="$t('wallets.desktop.copy')"></h4>
 
-              <nuxt-link to="/download" alt="Get Started" class="button">Download Scatter Desktop</nuxt-link>
+              <nuxt-link :to="localePath('download')" alt="Get Started" class="button">{{ $t('wallets.desktop.button') }}</nuxt-link>
 
               <hr>
                       
@@ -50,8 +47,8 @@
                       </g>
                   </g>
               </svg>
-              <h2 class="centered">Token Exchange</h2>
-              <p>Your funds become liquidity with our <strong>built-in token exchange</strong> mechanism. Never again will you have to go to an external exchange to swap BTC, TUSD, EOS, ETH, TRX, or DAI.</p>
+              <h2 class="centered">{{ $t('wallets.desktop.tokenexchange.title') }}</h2>
+              <p>{{ $t('wallets.desktop.tokenexchange.description') }}</p>
                   
               <hr>
 
@@ -62,8 +59,8 @@
                       </g>
                   </g>
               </svg>
-              <h2 class="centered">RIDL</h2>
-              <p>Our Reputation and Identity layer solves a key question on the internet: <strong>who can you trust</strong>? We believe in the wisdom of the crowd and are using it in Scatter to make sure that you know when it is ok to allow an action, and when it isn’t.</p>
+              <h2 class="centered">{{ $t('wallets.desktop.ridl.title') }}</h2>
+              <p>{{ $t('wallets.desktop.ridl.description') }}</p>
                           
               <hr>
 
@@ -76,8 +73,8 @@
                       </g>
                   </g>
               </svg>
-              <h2 class="centered">Hardware wallet support</h2>
-              <p>Because we put your safety first, we’ve included support for Ledger Nanos. We love them and think that you will, too.</p>
+              <h2 class="centered">{{ $t('wallets.desktop.hardwarewalletsupport.title') }}</h2>
+              <p>{{ $t('wallets.desktop.hardwarewalletsupport.description') }}</p>
 
             </div>
           </div>

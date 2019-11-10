@@ -6,7 +6,6 @@
                 <a target="_blank" :href="item.url" class="item-wrapper">
                     <div class="">
                         <div class="item-logo-wrapper">
-                            <!--<div class="item-logo" v-if="item.hasOwnProperty('hasimage')" :style="{ backgroundImage: `url(https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg)` }"></div>-->
                             <div class="item-logo" v-if="item.hasOwnProperty('hasimage')">
                                 <clazy-load :src="`https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg`">
                                     <img :src="`https://rawgit.com/GetScatter/ScatterApps/master/logos/${item.applink}.svg`">
@@ -14,7 +13,6 @@
                             </div>
                             <div v-else class="item-logo"></div>
                             <div class="item-blockchain">{{ item.blockchain }}</div>
-                            <!-- <div class="item-ridl-score green">4.0</div> -->
                         </div>
                         <div class="item-info">
                             <div class="item-name">{{ item.name }}</div>

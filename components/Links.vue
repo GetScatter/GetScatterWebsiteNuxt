@@ -1,9 +1,9 @@
 <template>
     <nav class="nav-list" role="navigation">
-      <nuxt-link class="nav-item" to="/products">Products</nuxt-link>
-      <nuxt-link class="nav-item" to="/apps">Apps</nuxt-link>
-      <nuxt-link class="nav-item" to="/developers">Developers</nuxt-link>
-      <nuxt-link class="nav-item" to="/articles">Articles</nuxt-link>
+      <nuxt-link class="nav-item" :to="localePath('products')">{{ $t("header.products") }}</nuxt-link>
+      <nuxt-link class="nav-item" :to="localePath('apps')">{{ $t("header.apps") }}</nuxt-link>
+      <nuxt-link class="nav-item" :to="localePath('developers')">{{ $t("header.developers") }}</nuxt-link>
+      <nuxt-link class="nav-item" :to="localePath('articles')">{{ $t("header.articles") }}</nuxt-link>
       <!-- <LangSwitcher/> -->
     </nav>
 
@@ -11,10 +11,7 @@
 
 <script>
 
-    import LangSwitcher from '@/components/LangSwitcher'
-
     export default {
-        components: { LangSwitcher },
         data() {
             return {
               
@@ -51,6 +48,7 @@
             font-weight:bold;
             font-size:$font-size-medium;
             color:$blue;
+            white-space: nowrap;
 
             @media (max-width: $breakpoint-tablet) {
               margin: 0 .6rem;

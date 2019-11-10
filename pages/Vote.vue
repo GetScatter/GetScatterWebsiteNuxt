@@ -5,28 +5,28 @@
 			<section class="row">
 				<section class="single-column">
 					<img src="../assets/love.png" class="loveme">
-					<h1 class="centered">Scatter is your community</h1>
+					<h1 class="centered">{{ $t('vote.title') }}</h1>
 					<h4 class="centered">
-						We're not just a part of your lives, you're a part of ours.
+						{{ $t('vote.tagline') }}
 					</h4>
 					<!-- VOTE BOX -->
 					<section class="vote-box">
 						<section v-if="error">
 							<figure class="error">{{error}}</figure>
-							<figure @click="vote" class="button button-large">Try Again</figure>
+							<figure @click="vote" class="button button-large">$t('vote.mainbutton.tryagain')n</figure>
 						</section>
 
 						<section v-else-if="!voted">
 							<section v-if="!producers">
-								<figure @click="vote" class="button button-large" :class="{'disabled':voting}">{{voting ? 'Please Wait' : 'Vote for us'}}</figure>
-								<p style="font-size: 11px;">For those wishing to vote elsewhere, our BP name is <u><b>vote4scatter</b></u></p>
+								<figure @click="vote" class="button button-large" :class="{'disabled':voting}">{{voting ? $t('vote.mainbutton.pleasewait') : $t('vote.mainbutton.voteforus') }}</figure>
+								<p style="margin-top:4rem">{{ $t('vote.smalltext')}} </p>
 							</section>
 
 							<section class="manual-voting" v-else>
 								<h3>
-									You are already voting for 30 block producers.
+									{{ $t('vote.manual.alreadythirty')}}
 								</h3>
-								<h5> Select one from the list below to replace it with ours</h5>
+								<h5> {{ $t('vote.manual.alreadythirty') }}</h5>
 
 
 								<section class="producers">
@@ -38,24 +38,18 @@
 						</section>
 
 						<section v-else>
-							<h3>Thanks for voting for us!</h3>
+							<h3>{{ $t('vote.thanks.thanks')}} </h3>
 							<p>
-								We appreciate your confidence in our team's ability to keep you and the network safe.
-								<b>If you have other accounts you want to vote with, just click the button below.</b>
+								{{ $t('vote.thanks.again')}} 
 							</p>
-							<figure @click="vote" class="button button-large">Vote Again</figure>
+							<figure @click="vote" class="button button-large">{{ $t('vote.thanks.voteagain')}} </figure>
 						</section>
 					</section>
 					<p>
-						Interacting with the <b>people</b> who use Scatter has been one of the most humbling experiences of our lives and we've
-						met some truly kind individuals along the way. A lot of the decisions we've made over the years have been directly influenced by the conversations
-						that have gone on in our community chats and we've watched in astonishment as random people on the internet helped other random people through both good times and bad times.
-						We've gotten request after request over the years for us to register as an <i>EOSIO Block Producer</i>, and we're finally ready to
-						step into that role and take on yet another responsibility which helps secure users, and the network.
+						{{ $t('vote.information')}}
 					</p>
 					<figure class="box">
-						Though we're starting with the <b>EOS Mainnet</b>, we intend to expand this initiative into other chains and networks as well, as we
-						fully believe in a broader ecosystem which includes many options with many different structures, each suited best for individual projects.
+						{{ $t('vote.notice')}}
 					</figure>
 
 					
@@ -69,14 +63,14 @@
 
 			<section class="row">
 				<section class="single-column" style="text-align:center;">
-					<h2>Scatter's ecosystem contributions</h2>
+					<h2>{{ $t('vote.contributions.title') }}</h2>
 				</section>
 			</section>
 
 			<div class="flex-row">
 				<div class="half">
-					<h3>Scatter Desktop</h3>
-					<p>The desktop wallet you trust and love, which we've invested hundreds of man hours into building. It is a safe and secure place to manage your keys and the accounts that are associated with them.</p>
+					<h3>{{ $t('vote.contributions.desktop.title') }}</h3>
+					<p>{{ $t('vote.contributions.desktop.information') }}</p>
 				</div>
 				<div class="half with-image">
 					<img src="../assets/scatter_desktop.png">
@@ -88,15 +82,15 @@
 					<img src="../assets/scatter_extension.jpg">
 				</div>
 				<div class="half">
-					<h3>Scatter Extension</h3>
-					<p>Though we've now closed this down in favor of Scatter Desktop, it would be tragic not to mention the first ever EOS wallet (preceding all others by 6 months) which helped launch the mainnet.</p>
+					<h3>{{ $t('vote.contributions.extension.title') }}</h3>
+					<p>{{ $t('vote.contributions.extension.information') }}</p>
 				</div>
 			</div>
 
 			<div class="flex-row">
 				<div class="half">
-					<h3>Reputation and Identity Layer</h3>
-					<p>Our reputation &amp; identity solution which helps keep you safe, and is <a href="https://ridl.network" target="_blank">currently in testing phases</a> and integrated into Scatter 11+.</p>
+					<h3>{{ $t('vote.contributions.ridl.title') }}</h3>
+					<p>{{ $t('vote.contributions.ridl.information') }}</p>
 				</div>
 				<div class="half with-image">
 					<img src="../assets/ridl.png">
@@ -108,22 +102,21 @@
 					<img src="../assets/mobile.png">
 				</div>
 				<div class="half">
-					<h3>Scatter Mobile</h3>
-					<p>For all your blockchain needs on the go, Scatter Mobile provides a safe, smooth experience. We are expecting to release this in Q4 2019.</p>
+					<h3>{{ $t('vote.contributions.mobile.title') }}</h3>
+					<p>{{ $t('vote.contributions.mobile.information') }}</p>
 				</div>
 			</div>			
 
 			<section class="single-column">
-				<h2>Development Tooling</h2>
-				<h4>We are also highly active in the development community, providing many of the foundational libraries used to connect users to apps, and apps to networks.</h4>
-				<nuxt-link to="/products/developmenttools" class="button">Learn about our tools</nuxt-link>
+				<h2>{{ $t('vote.contributions.developmenttooling.title') }}</h2>
+				<h4>{{ $t('vote.contributions.developmenttooling.subtitle') }}</h4>
+				<nuxt-link to="/products/developmenttools" class="button">{{ $t('vote.contributions.developmenttooling.button') }}</nuxt-link>
 				<hr>
-				<h3>Tell us what we can be doing better</h3>
+				<h3>{{ $t('vote.contributions.dobetter') }}</h3>
 				<p>
-					We take community input very seriously at Scatter. If there's something we aren't already doing which you think the network needs, let us know.
+					{{ $t('vote.contributions.input') }}
 					<br>
-					<br>
-					<a href="mailto:bp.suggestions@get-scatter.com">Email us at bp.suggestions@get-scatter.com</a>
+					{{ $t('vote.contributions.email') }} <a href="mailto:bp.suggestions@get-scatter.com">bp.suggestions@get-scatter.com</a>
 				</p>
 			</section>
 		</section>

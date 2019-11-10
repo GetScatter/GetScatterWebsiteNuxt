@@ -102,14 +102,14 @@
             </div>
             <section class="lead-content">
                 <h1>
-                    The advanced blockchain wallet you need
+                    {{ $t("home.title") }}
                 </h1>
                 <h3>
-                    Scatter Desktop is an <a href="https://github.com/GetScatter">open-source</a> wallet for your digital currencies and assets. 
+                    <article v-html="$t('home.subtitle')"></article>
                     <hr>
-                    <span>Available now for Windows, MacOS, and Linux.</span>
+                    <span v-html="$t('home.available')"></span>
                 </h3>
-                <nuxt-link to="/download" alt="Get Started" class="button">Download Scatter Desktop</nuxt-link>
+                <nuxt-link :to="localePath('download')" class="button">{{ $t('home.downloadbutton') }}</nuxt-link>
             </section>
             <section class="lead-images">
                 <div class="web-image">
@@ -125,18 +125,18 @@
         </section>
         <hr>
         <section class="single-column" data-aos="fade-up">
-            <nuxt-link to="/vote" id="vote">
+            <nuxt-link :to="localePath('vote')" id="vote">
                 <img src="../assets/love.png" class="loveme">
-                <h1>Vote for <br>Scatter's Block Producer</h1>
-                <h3>It is your votes that keep our project running. Make sure to head over to our voting page right now and vote for our block producer!</h3>
+                <h1 v-html="$t('home.vote.title')"></h1>
+                <h3>{{ $t("home.vote.information") }}</h3>
             </nuxt-link>
         </section>
         <hr>
         <section class="full-width standard-padding" id="blockchain-for-everyone" data-aos="fade-up">
             <section class="half-width">
-                <h1>Blockchain for everyone</h1>
-                <h3>Connecting to decentralized apps is hard. Most people don’t have the time to learn all the concepts necessary to make it safe to store their assets digitally. Let us show you how easy it can be.</h3>
-                <router-link to="products/wallets/bridge" alt="Learn more about Bridge" class="button">LEARN MORE ABOUT BRIDGE</router-link>
+                <h1>{{ $t("home.bridge.title") }}</h1>
+                <h3>{{ $t("home.bridge.information") }}</h3>
+                <router-link :to="localePath('products/wallets/bridge')" class="button">{{ $t("home.bridge.button") }}</router-link>
             </section>
             <section class="half-width">
                 <img src="../assets/scatter_simple_start_people.png">
@@ -147,40 +147,40 @@
                 <img src="../assets/scatter_simple_start_devs.png">
             </section>
             <section class="half-width">
-                <h1>Empowering Developers</h1>
-                <h3>We’re certain that your users will love how slick, sleek, and simple Scatter Bridge is to use. Our SDKs are straightforward to integrate into your web, mobile, Unity, and Unreal applications.</h3>
-                <router-link to="/developers" alt="READ OUR DOCUMENTATION" class="button">READ OUR DOCUMENTATION</router-link>
+                <h1>{{ $t("home.developers.title") }}</h1>
+                <h3>{{ $t("home.developers.information") }}</h3>
+                <router-link :to="localePath('developers')" class="button">{{ $t("home.developers.button") }}</router-link>
             </section>
         </section>
         <section class="full-width standard-padding" id="card-set" data-aos="fade-up">
             <section class="half-width">
-                <h1 class="huge">Super simple.</h1>
-                <div class="card">
+                <h1 class="huge">{{ $t("home.extras.title") }}</h1>
+                <!-- <div class="card">
                     <img src="../assets/card_cart.png">
-                    <h3>Our Marketplace will make obtaining digital assets easy</h3>
-                    <p>We believe in a future that empowers developers and users to create real digital economies as alternatives to the advertising heavy options availabe today.</p>
-                </div>
+                    <h3>{{ $t("home.extras.marketplace.title") }}</h3>
+                    <p>{{ $t("home.extras.marketplace.information") }}</p>
+                </div> -->
                 <div class="card">
                     <img src="../assets/card_exchange.png">
-                    <h3>We are providing unparalled access to digital assets</h3>
-                    <p>A built-in exchange and purchasing with credit cards means that it is a matter of a couple of clicks to complete a purchase.</p>
+                    <h3>{{ $t("home.extras.keys.title") }}</h3>
+                    <p>{{ $t("home.extras.keys.information") }}</p>
+                </div>
+                <div class="card">
+                    <img src="../assets/card_ridl.png">
+                    <h3>{{ $t("home.extras.ridl.title") }}</h3>
+                    <p>{{ $t("home.extras.ridl.information") }}</p>
                 </div>
             </section>
             <section class="half-width">
                 <div class="card">
                     <img src="../assets/card_wallet.png">
-                    <h3>Keep your private keys safe</h3>
-                    <p>If you are not in control of your private keys, then you are not in control of your assets. Scatter makes sure that your accounts are secure and your keys are never exposed by only allowing signed transactions.</p>
+                    <h3>{{ $t("home.extras.identity.title") }}</h3>
+                    <p>{{ $t("home.extras.identity.information") }}</p>
                 </div>
                 <div class="card">
                     <img src="../assets/card_identity.png">
-                    <h3>Identity verification made friendly and easy to complete</h3>
-                    <p>KYC and AML compliance is a necessary step towards ensuring that the value added to a network is legitimate. We have made the process as painless as possible.</p>
-                </div>
-                <div class="card">
-                    <img src="../assets/card_ridl.png">
-                    <h3>Our decentralized firewall uses the power of the crowd to ensure your safety and security</h3>
-                    <p>Scatter Bridge automatically connects to our proprietary security network and let’s you know if the transaction you are going to sign is safe.</p>
+                    <h3>{{ $t("home.extras.exchange.title") }}</h3>
+                    <p>{{ $t("home.extras.exchange.information") }}</p>
                 </div>
             </section>
         </section>
@@ -197,6 +197,18 @@
 
     export default {
         name: 'Home',
+        head () {
+          return {
+            title: 'Download Scatter Desktop for Windows, Mac, and Linux',
+            meta: [
+              { 
+                hid: 'description', 
+                name: 'description', 
+                content: 'It is critical that you only download Scatter from us! Any other provider is untrustworthy and likely will steal your private keys and the associated accounts.'
+              }
+            ]
+          }
+        },
         components: { TopDapps, ProductsComponent },
         data(){return {
             LOGOS,
@@ -217,7 +229,7 @@
         display:flex;
         flex-direction:row;
         align-items:center;
-        margin:2.6rem auto 4rem;
+        margin:0 auto 4rem;
         background-image:url('../assets/nebula_bg.jpg');
         background-position:center right;
         background-repeat:no-repeat;
@@ -371,10 +383,11 @@
                     box-shadow: 0 10px 20px 0 rgba(7,83,123,0.19);
                     height:40%;
                     position: absolute;
+                    top:4rem;
                     right: 0;
-                    max-width: 100%;
                     height: auto;
-                    width: auto;
+                    width: 100%;
+                    max-width: 920px;
                 }
                 
             }

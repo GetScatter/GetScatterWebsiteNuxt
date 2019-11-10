@@ -1,7 +1,7 @@
 <template>
 	<header>
 
-		<nuxt-link to="/" class="logo">
+		<nuxt-link :to="localePath('index')" class="logo">
             <svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="scatter_simple_start" transform="translate(-31.000000, -30.000000)" fill="#0799FF">
@@ -13,6 +13,7 @@
 
         <div class="app-links">
             <Links></Links>
+            <LangSwitcher></LangSwitcher>
         </div>
 
         <section class="external-links">
@@ -26,9 +27,10 @@
 <script>
 
     import Links from '~/components/Links'
+    import LangSwitcher from '@/components/LangSwitcher'
     
     export default {
-        components: { Links }
+        components: { Links, LangSwitcher }
     }
 
 </script>
@@ -42,11 +44,14 @@
         display:flex;
         flex-direction:row;
         justify-content:center;
-        height:80px;
+        height: 104px;
+
+        @media (max-width: $breakpoint-tablet) {
+          height: 54px;
+        }
 
         @media (max-width: $breakpoint-mobile) {
           flex-direction:column;
-          height: 60px;
           display:flex;
         }
 
@@ -99,6 +104,7 @@
 
     .app-links{
         justify-self: end;
+        display: flex;
 
         @media (max-width: $breakpoint-mobile) {
             align-self:flex-end;
@@ -108,19 +114,19 @@
 
     .external-links {
         display:flex;
-        flex-direction:column;
-        position:fixed;
+        flex-direction:row;
+        position:absolute;
         right:20px;
-        top:20px;
+        top:28px;
         z-index:1000;
         background:white;
-        padding:6px;
+        padding:2px;
         border-radius:44px;
 
         @media (max-width: $breakpoint-tablet) {
           right:10px;
-          top:10px;
-          padding:4px;
+          top:6px;
+          padding:2px 6px;
         }
 
         @media (max-width: $breakpoint-mobile) {
@@ -131,6 +137,7 @@
         a {
             color:$blue;
             font-size:30px;
+            margin:2px;
         }
     }
 

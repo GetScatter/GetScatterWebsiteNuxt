@@ -1,6 +1,6 @@
 const I18N = {
   useCookie: false,
-  alwaysRedirect: true,
+  alwaysRedirect: false,
   locales: [
     {
       code: 'en',
@@ -11,7 +11,7 @@ const I18N = {
     {
       code: 'cn',
       iso: 'cn-CN',
-      name: 'Chinese',
+      name: '中文',
       file: 'cn/index.js'
     }
   ],

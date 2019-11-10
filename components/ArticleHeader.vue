@@ -1,7 +1,7 @@
 <template>
     <header>
 
-        <nuxt-link to="/articles" class="logo">
+        <nuxt-link :to="localePath('articles')" class="logo">
             
             <svg class="arrow" width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -16,14 +16,15 @@
                     </g>
                 </g>
             </svg>
-            <h3>All articles</h3>
+            <h3>{{ $t('allarticles') }}</h3>
         </nuxt-link>
 
         <section class="sharing">
+            <LangSwitcher></LangSwitcher>
             <a class="twitter-share-button"
               v-bind:href="href"
               data-size="large">
-              <span>Share on Twitter</span> <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-twitter-square"></i>
             </a>
         </section>
 
@@ -32,11 +33,12 @@
 
 <script>
     
+    import LangSwitcher from '@/components/LangSwitcher'
+
     export default {
-        components: { },
+        components: { LangSwitcher },
         computed:{
             href: function () {
-                console.log(this.$route)
               var path = 'https://twitter.com/intent/tweet?text=Great%20article%20by%20the%20team%20at%20Scatter - ' + 'https://get-scatter.com' + this.$route.path
               return path
             }
@@ -50,6 +52,13 @@
     @import "@/assets/_variables.scss";
 
     html, body { overflow:hidden; }
+
+                
+    .nav-item {
+        border-right:1px solid $lightgrey;
+        margin-right:6px;
+        display:block;
+    }
 
     header{
         display:flex;
@@ -69,6 +78,8 @@
         }
 
         .sharing {
+            display:flex;
+            flex-direction:row;
 
             a {
                 font-size:$font-size-standard;  

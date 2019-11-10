@@ -5,8 +5,8 @@
           <div class="body-text">
             <div class="row">
               <div class="single-column">
-                <h2>Download {{release.version}}</h2>
-                <h4>Scatter connects you to blockchains in a simple and straightforward package. It is internationalized, sleek, and powerful.</h4>
+                <h2>{{ $t("download.title") }} {{release.version}}</h2>
+                <h4>{{ $t("download.information") }}</h4>
                 <a :href="release.mac" class="button">
                   <div><svg width="19px" height="24px" viewBox="0 0 19 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

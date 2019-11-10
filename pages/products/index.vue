@@ -4,9 +4,9 @@
         <section class="body" data-aos="fade-up" >
           <div class="body-text">
             <div class="single-column">
-              <nuxt-link to="/" class="button button-default button-small">Back home</nuxt-link>
-              <h1>Scatter is a leading provider of blockchain technology</h1>
-              <h3>Our mission is to connect developers and users to cutting edge technologies so that they can benefit from the most important features of decentralization such as real ownership, security, and privacy.</h3>
+              <nuxt-link :to="localePath('index')" class="button button-default button-small"><i class="fal fa-chevron-left"></i> &nbsp; {{ $t("backhome") }}</nuxt-link>
+              <h1>{{ $t("products.title") }}</h1>
+              <h3>{{ $t("products.introduction") }}</h3>
             </div>
           </div>
         </section>

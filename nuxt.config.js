@@ -42,6 +42,7 @@ export default {
   plugins: [
     { src: '@/plugins/lazyload' },
     { src: '@/plugins/globalComponents' },
+    { src: '@/plugins/i18n' },
     { src: '@/plugins/languages' },
     { src: "@/plugins/aos", ssr: false }
   ],

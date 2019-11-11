@@ -2,6 +2,7 @@ import home from './home'
 import footer from './footer'
 import header from './header'
 import promoted from './promoted'
+import partners from './partners'
 import products from './products'
 import wallets from './wallets'
 import productscomponent from './productscomponent'
@@ -12,6 +13,7 @@ import download from './download'
 import vote from './vote'
 import articles from './articles'
 import whywebuildoneosio from './whywebuildoneosio'
+import founders from './founders'
 
 export default {
   // Standard
@@ -23,6 +25,7 @@ export default {
   footer: footer,
   header: header,
   promoted: promoted,
+  partners: partners,
   products: products,
     wallets: wallets,
     blockproducers: blockproducers,
@@ -30,6 +33,7 @@ export default {
   apps: apps,
   download: download,
   vote: vote,
+  founders: founders,
   articles: articles,
   productscomponent: productscomponent,
 

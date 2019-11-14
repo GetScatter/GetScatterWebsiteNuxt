@@ -1,3 +1,3 @@
 export default {
-    title: "推广应用",   
+    title: "获推广的应用",   
 }

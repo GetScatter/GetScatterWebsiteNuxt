@@ -41,7 +41,7 @@
         <nuxt-link :to="localePath('download')" class="button">{{ $t("footer.download") }}</nuxt-link>
     </section>
     <section class="body">
-        {{ $t("footer.copyright") }}
+        {{ $t("footer.copyright") }} <br> <nuxt-link :to="localePath('terms')">{{ $t("footer.terms") }}</nuxt-link>
     </section>
   </div>
 </template>

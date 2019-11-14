@@ -17,7 +17,7 @@ import founders from './founders'
 
 export default {
   // Standard
-  backhome: '回家',  
+  backhome: '返回首页',  
   allarticles: '所有文章',
 
   // Imported pages 

@@ -18,7 +18,7 @@
             </section>
           </nuxt-link>
 
-          <nuxt-link to="/articles/scatter-embed-one-codebase-many-wallets" class="article-card type-two" data-aos="slide-up">
+          <nuxt-link :to="localePath('scatter-embed-one-codebase-many-wallets')" class="article-card type-two" data-aos="slide-up">
             <img src="@/assets/images/blog/scatter-embed-one-codebase-many-wallets/embed.png">
             <section class="content" data-aos="flip-left">
               <h2>{{ $t("articles.scatterembed.title") }}</h2>
@@ -26,7 +26,7 @@
             </section>
           </nuxt-link>
 
-          <nuxt-link to="/articles/scatter-releases-a-block-producer-candidate" class="article-card type-three" data-aos="slide-up">
+          <nuxt-link :to="localePath('scatter-releases-a-block-producer-candidate')" class="article-card type-three" data-aos="slide-up">
             <img src="@/assets/images/blog/scatter-releases-a-block-producer-candidate/bp_candidate.png">
             <section class="content" data-aos="flip-left">
               <h2>{{ $t("articles.scattersblockproducer.title") }}</h2>
@@ -34,7 +34,7 @@
             </section>
           </nuxt-link>
 
-          <nuxt-link to="/articles/about-wallets-SDKs-and-trust-on-the-blockchain" class="article-card" data-aos="slide-up">
+          <nuxt-link :to="localePath('about-wallets-SDKs-and-trust-on-the-blockchain')" class="article-card" data-aos="slide-up">
             <img src="@/assets/images/blog/about-wallets-SDKs-and-trust-on-the-blockchain/1_7xDknqWLDZ7w4j2D0JNWAA.png">
             <section class="content" data-aos="flip-left">
               <h2>{{ $t("articles.walletsandsdks.title") }}</h2>
@@ -42,7 +42,7 @@
             </section>
           </nuxt-link>
 
-          <nuxt-link to="/articles/about-keys-keypairs-and-accounts" class="article-card type-one" data-aos="slide-up">
+          <nuxt-link :to="localePath('about-keys-keypairs-and-accounts')" class="article-card type-one" data-aos="slide-up">
             <img src="@/assets/images/blog/about-keys-keypairs-and-accounts/image_1.png">
             <section class="content" data-aos="flip-left">
               <h2>{{ $t("articles.keypairsandaccouts.title") }}</h2>

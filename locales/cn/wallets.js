@@ -1,12 +1,12 @@
 export default {
     title: "我们的钱包",
-    information: "除了可以存储数字资产的地方以外，我们有幸推动钱包的概念。",
+    information: "我们有幸推出不仅仅是用于储存数字资产的钱包。",
     desktop: {
-        copy: "在整合我们的新<a href='https://github.com/GetScatter/walletpack/''> Walletpack库</a>的几个月的工作完成后，Scatter Desktop变得比以往更好。 内置的应用程序资源管理器将帮助您发现仅在区块链上才有的新的令人兴奋的体验。 密钥管理比以往任何时候都更容易，并且只需少量的专业知识就能使密钥和帐户永远保持安全。",
-        button: "下载 Scatter Desktop",
+        copy: "在整合我们新的<a href='https://github.com/GetScatter/walletpack/''> Walletpack库</a>的几个月的工作完成后，Scatter 桌面版将完全被提升。 内置的应用程序资源管理器将帮助您发现仅在区块链上才有的新的并令人兴奋的体验。 密钥管理比以往任何时候都更容易，并且只需少量的专业知识就能使密钥和帐户永远保持安全。",
+        button: "下载 Scatter 桌面版",
         tokenexchange: {
             title: "代币兑换",
-            description: "通过我们内置的令牌交换机制，您的资金将变为流动资金。 您再也不需要去外部交易所交换BTC，TUSD，EOS，ETH，TRX或DAI。",
+            description: "通过我们内置的代笔交换机制，您的资金将变为流动资金。 您再也不需要去外部交易所交换BTC，TUSD，EOS，ETH，TRX或DAI。",
         },
         ridl: {
             title: "RIDL",
@@ -18,8 +18,8 @@ export default {
         },
     },
     bridge: {
-        intro: "用户只有使用电子邮件地址，手机号码或社交帐户（例如Facebook或Google）才能使用分散式应用程序。",
-        subsection: "我们知道，所有钱包都是大规模采用的障碍，甚至是分散。 我们有一个解决方案。",
+        intro: "用户只需电子邮件地址，手机号码或社交帐户（例如Facebook或Google）就能使用分散式应用程序。",
+        subsection: "我们知道，所有钱包都难以被大规模使用，因此我们有一个解决方案。",
         sdks: "我们的SDK提供了一种称为 Scatter Bridge 的后备服务，可为您的用户提供无区块链的体验，并且如果您的用户没有兼容的钱包，则无需对现有代码进行任何修改。",
         anytime: "随时随地",
         anytimetext: "由于Scatter Bridge是一项完全托管服务，因此它允许用户在任何地方使用其帐户使用应用程序。 这意味着他们可以在笔记本电脑，台式机，手机甚至智能手表上使用它。",

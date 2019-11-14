@@ -15,7 +15,7 @@ export default {
   },
   tokenwrap: {
     title:"Tokenwrap",
-    description:"一个JavaScript库，包装了各种基于EOSIO的NFT令牌，并允许开发人员在其应用上轻松设置和使用。",
+    description:"一个JavaScript库，包装了各种基于EOSIO的NFT代笔，并允许开发人员在其应用上轻松设置和使用。",
   },
   morpheos: {
     title:"Morpheos",

@@ -1,39 +1,39 @@
 export default {
-    title: "您需要的高级区块链钱包",
-    subtitle: "Scatter Desktop是用于您的数字货币和资产的<a href='https://github.com/GetScatter'>开源</a>钱包。",
-    available: "现在可用于Windows，MacOS和Linux。",
-    downloadbutton: "下载分散桌面",
+    title: "您所需要的区块链钱包",
+    subtitle: "Scatter 桌面版是用于您的数字货币和资产的<a href='https://github.com/GetScatter'>开源</a>钱包。",
+    available: "可运行在Windows，MacOS和Linux上。",
+    downloadbutton: "下载Scatter 桌面版",
     vote: {
-        title: "投票给Scatter的块生产者",
-        information: "是您的投票使我们的项目保持运转。 请确保立即访问我们的投票页面，并为我们的区块生产者投票！"
+        title: "投票支持Scatter成为其一区块生产者",
+        information: "您手中的一投票将使我们的项目持续运行。 请前访该投票页面，为我们投票！"
     },
     bridge: {
-        title: "每个人的区块链",
-        information: "连接到分散式应用程序很困难。 大多数人没有时间去学习使数字化资产安全存储所需的所有概念。 让我们向您展示这有多么容易。",
-        button: "学到更多"
+        title: "区块链为每个人所属",
+        information: "连接分散式应用难度相当大。主要是大多数人没有时间去学习安全储存数字化资产所需的所有概念。 让我们向您展示事实上这学习过程其实是多么简单。",
+        button: "了解关于BRIDGE的更多细节"
     },
     developers: {
         title: "赋予开发人员权力",
-        information: "我们相信您的用户一定会喜欢使用光滑，圆滑和简单的Scatter Bridge。 我们的SDK可直接集成到您的Web，移动，Unity和Unreal应用程序中。",
+        information: "我们相信您的用户一定会喜欢使用顺畅兼易于使用的Scatter Bridge。 我们的SDK可直接集成到您的网络，移动，Unity和Unreal应用程序中。",
         button: "阅读我们的文档"
     },
     extras: {
-        title: "超级简单。",
+        title: "极易使用。",
         marketplace: {
-            title: "我们的市场将使获取数字资产变得容易",
-            information: "我们相信，未来将有能力使开发人员和用户创建真正的数字经济，以替代当今可用的大量广告。"
+            title: "我们的市集将使获取数字资产变得非常容易",
+            information: "我们相信这市集在未来将有能力使开发人员和用户创建真正的数字货币经济。"
         },
         keys: {
-            title:"保持私钥安全",
-            information:"如果您无法控制私钥，那么您将无法控制资产。 Scatter通过仅允许已签名的交易来确保您的帐户安全，并且不会泄露您的密钥"
+            title:"确保您的私钥安全",
+            information:"如果您未能掌控您私钥，意味着您对您的资产未能全盘掌控。 Scatter通过仅允许已签名的交易来确保您的帐户安全，并且不会泄露您的密钥"
         },
         identity: {
             title:"身份验证变得友好且易于完成",
-            information:"遵守KYC和AML是确保网络附加值合法的必要步骤。 我们使过程尽可能轻松。"
+            information:"遵守KYC和AML是确保网络附加值合法的必要步骤。 我们使该过程尽可能轻松。"
         },
         exchange: {
-            title:"我们提供对数字资产的无障碍访问",
-            information:"内置的信用卡交易和购买意味着只需几次点击即可完成购买。"
+            title:"弹指间购买数字资产",
+            information:"内置交易所，及支持信用卡购买数字资产，意味着购买数字资产能在弹指之间轻松完成。"
         },
         ridl: {
             title:"我们的分散式防火墙利用人群的力量来确保您的安全",

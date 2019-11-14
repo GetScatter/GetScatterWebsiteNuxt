@@ -13,5 +13,6 @@ export default {
     support: 'Support',
     partners: 'Partners',
     founders: 'Founders'
-  }
+  },
+  terms: 'Terms of Use'
 }

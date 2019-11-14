@@ -42,9 +42,10 @@
             flex-direction:row;
             flex-wrap: wrap;
             padding:0 2rem;
+            margin:0 auto;
 
             .product {
-              height:50vh;
+              height:480px;
               width:calc(33.33% - 4rem);
               padding:4rem;
               margin:2rem;

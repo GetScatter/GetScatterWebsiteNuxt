@@ -9,10 +9,11 @@
               <h3>{{ $t('blockproducers.information') }}</h3>
               <img class="maximum-width-image" alt="The best desktop blockchain wallet experience" src="../../../assets/bp_candidate.png">
 
-              <h2>EOS Mainnet</h2>
+              <h2>EOS and Telos Mainnets</h2>
               <h4 v-html="$t('blockproducers.mainnet.description')"></h4>
               <p v-html="$t('blockproducers.mainnet.information')"></p>
               <nuxt-link :to="localePath('vote')" class="button">{{ $t('blockproducers.mainnet.button') }}</nuxt-link>
+
             </div>
           </div>
         </section>

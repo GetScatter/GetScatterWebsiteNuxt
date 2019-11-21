@@ -12,7 +12,8 @@ export default {
     vision: 'Vision',
     support: 'Support',
     partners: 'Partners',
-    founders: 'Founders'
+    founders: 'Operators',
+    code: 'Code of Conduct'
   },
   terms: 'Terms of Use'
 }

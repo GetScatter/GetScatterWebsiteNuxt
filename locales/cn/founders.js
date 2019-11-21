@@ -1,5 +1,5 @@
 export default {
-  title: '创办人',
+  title: '经营者',
   introduction: '我们对尖端技术充满敬业，好奇和深深着迷。',
   nathan: {
     position:'CEO, 首席建筑师',

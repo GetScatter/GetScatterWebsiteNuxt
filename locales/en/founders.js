@@ -1,5 +1,5 @@
 export default {
-  title: 'Founders',
+  title: 'Operators',
   introduction: 'We are dedicated, curious, and deeply fascinated by cutting edge technology.',
   nathan: {
     position:'CEO, Chief Architect',

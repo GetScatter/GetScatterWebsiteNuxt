@@ -12,7 +12,8 @@ export default {
     vision: '远景',
     support: '支持',
     partners: '商业伙伴',
-    founders: '创办人'
+    founders: '经营者',
+    code: '行为守则'
   },
   terms: '使用条款'
 }

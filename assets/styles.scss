@@ -145,7 +145,7 @@ h2 {
 }
 
 .body-text h2 {
-  margin-top:2rem;
+  margin-top:4rem;
 }
 
 h3 {
@@ -794,10 +794,18 @@ section {
         max-width:90%;
       }
 
-      p, li {
+      p {
         color:$darkgrey;
         margin-bottom:3rem;
         line-height: 2.4rem;
+      }
+
+      ol, ul {
+        margin:3rem 3rem 3rem;
+      }
+
+      li {
+        color:$darkgrey;
       }
     }
 

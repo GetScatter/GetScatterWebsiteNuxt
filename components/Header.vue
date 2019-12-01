@@ -17,7 +17,7 @@
         </div>
 
         <section class="external-links">
-            <a href="https://t.me/Scatter"><i class="fab fa-telegram"></i></a>
+            <a target="_blank" href="https://t.me/Scatter"><i class="fab fa-telegram"></i></a>
             <a href="https://support.get-scatter.com/"><i class="fas fa-question-circle"></i></a>
         </section>
 
@@ -28,7 +28,7 @@
 
     import Links from '~/components/Links'
     import LangSwitcher from '@/components/LangSwitcher'
-    
+
     export default {
         components: { Links, LangSwitcher }
     }

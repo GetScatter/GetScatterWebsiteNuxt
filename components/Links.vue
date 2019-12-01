@@ -1,9 +1,9 @@
 <template>
     <nav class="nav-list" role="navigation">
-      <nuxt-link class="nav-item" to="products">{{ $t("header.products") }}</nuxt-link>
-      <nuxt-link class="nav-item" to="apps">{{ $t("header.apps") }}</nuxt-link>
-      <nuxt-link class="nav-item" to="developers">{{ $t("header.developers") }}</nuxt-link>
-      <nuxt-link class="nav-item" to="articles">{{ $t("header.articles") }}</nuxt-link>
+      <nuxt-link class="nav-item" :to="localePath('products')">{{ $t("header.products") }}</nuxt-link>
+      <nuxt-link class="nav-item" :to="localePath('apps')">{{ $t("header.apps") }}</nuxt-link>
+      <nuxt-link class="nav-item" :to="localePath('developers')">{{ $t("header.developers") }}</nuxt-link>
+      <nuxt-link class="nav-item" :to="localePath('articles')">{{ $t("header.articles") }}</nuxt-link>
       <!-- <LangSwitcher/> -->
     </nav>
 

@@ -14,6 +14,7 @@
             <nuxt-link :to="localePath('partners')">{{ $t("footer.links.partners") }}</nuxt-link>
             <nuxt-link :to="localePath('ownership')">{{ $t("footer.links.founders") }}</nuxt-link>
             <nuxt-link :to="localePath('code-of-conduct')">{{ $t("footer.links.code") }}</nuxt-link>
+            <nuxt-link :to="localePath('branding')">Branding</nuxt-link>
         </nav>
     </section>
 

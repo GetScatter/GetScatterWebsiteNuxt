@@ -312,7 +312,7 @@ h5 {
     }
   }
 
-  
+
 
   &:hover {
     color:white;
@@ -337,9 +337,10 @@ input {
     flex-direction:column;
     width:100vw;
 
-    img.maximum-width-image {
-      width:100%;
-    }
+  }
+
+  .maximum-width-image {
+    width:100%;
   }
 }
 
@@ -413,7 +414,7 @@ input {
     align-items:flex-start;
 
     @media (max-width: $breakpoint-tablet) {
-      flex-direction: column;    
+      flex-direction: column;
       margin-bottom:4rem;
     }
 
@@ -519,12 +520,12 @@ img {
       margin-bottom:1rem;
 
       &:before {
-        content: "\2022";  
-        color: $blue; 
-        font-weight: bold; 
+        content: "\2022";
+        color: $blue;
+        font-weight: bold;
         font-size:$font-size-big;
-        display: inline-block; 
-        width: 1em; 
+        display: inline-block;
+        width: 1em;
       }
     }
   }

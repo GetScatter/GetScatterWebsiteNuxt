@@ -13,7 +13,7 @@
 					<section class="vote-box">
 						<section v-if="error">
 							<figure class="error">{{error}}</figure>
-							<figure @click="vote" class="button button-large">$t('vote.mainbutton.tryagain')n</figure>
+							<figure @click="vote" class="button button-large">{{$t('vote.mainbutton.tryagain')}}</figure>
 						</section>
 
 						<section v-else-if="!voted">
@@ -40,7 +40,7 @@
 						<section v-else>
 							<h3>{{ $t('vote.thanks.thanks')}} </h3>
 							<p>
-								{{ $t('vote.thanks.again')}} 
+								{{ $t('vote.thanks.again')}}
 							</p>
 							<figure @click="vote" class="button button-large">{{ $t('vote.thanks.voteagain')}} </figure>
 						</section>
@@ -52,7 +52,7 @@
 						{{ $t('vote.notice')}}
 					</figure>
 
-					
+
 
 				</section>
 
@@ -105,7 +105,7 @@
 					<h3>{{ $t('vote.contributions.mobile.title') }}</h3>
 					<p>{{ $t('vote.contributions.mobile.information') }}</p>
 				</div>
-			</div>			
+			</div>
 
 			<section class="single-column">
 				<h2>{{ $t('vote.contributions.developmenttooling.title') }}</h2>
@@ -162,9 +162,9 @@
           return {
             title: 'Vote for Scatter\'s Block Producer',
             meta: [
-              { 
-                hid: 'description', 
-                name: 'description', 
+              {
+                hid: 'description',
+                name: 'description',
                 content: 'Scatter now provides top-notch infrastructure on EOS Mainnet, and we would appriate your vote! :)'
               }
             ]
@@ -325,7 +325,7 @@
 </script>
 
 <style lang="scss">
-	
+
 	@import "@/assets/_variables.scss";
 
 	.vote {

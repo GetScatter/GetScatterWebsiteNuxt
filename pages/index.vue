@@ -2,103 +2,7 @@
     <div id="home">
         <section id="lead-in" data-aos="fade-up">
             <div class='wrap'>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
-              <div class='tri'></div>
+              <div class='tri' v-for="i in [...Array(80)].keys()"></div>
             </div>
             <section class="lead-content">
                 <h1>
@@ -152,38 +56,38 @@
                 <router-link :to="localePath('developers')" class="button">{{ $t("home.developers.button") }}</router-link>
             </section>
         </section>
-        <section class="full-width standard-padding" id="card-set" data-aos="fade-up">
-            <section class="half-width">
-                <h1 class="huge">{{ $t("home.extras.title") }}</h1>
-                <!-- <div class="card">
-                    <img src="../assets/card_cart.png">
-                    <h3>{{ $t("home.extras.marketplace.title") }}</h3>
-                    <p>{{ $t("home.extras.marketplace.information") }}</p>
-                </div> -->
-                <div class="card">
-                    <img src="../assets/card_exchange.png">
-                    <h3>{{ $t("home.extras.keys.title") }}</h3>
-                    <p>{{ $t("home.extras.keys.information") }}</p>
-                </div>
-                <div class="card">
-                    <img src="../assets/card_ridl.png">
-                    <h3>{{ $t("home.extras.ridl.title") }}</h3>
-                    <p>{{ $t("home.extras.ridl.information") }}</p>
-                </div>
-            </section>
-            <section class="half-width">
-                <div class="card">
-                    <img src="../assets/card_wallet.png">
-                    <h3>{{ $t("home.extras.identity.title") }}</h3>
-                    <p>{{ $t("home.extras.identity.information") }}</p>
-                </div>
-                <div class="card">
-                    <img src="../assets/card_identity.png">
-                    <h3>{{ $t("home.extras.exchange.title") }}</h3>
-                    <p>{{ $t("home.extras.exchange.information") }}</p>
-                </div>
-            </section>
-        </section>
+        <!--<section class="full-width standard-padding" id="card-set" data-aos="fade-up">-->
+            <!--<section class="half-width">-->
+                <!--<h1 class="huge">{{ $t("home.extras.title") }}</h1>-->
+                <!--&lt;!&ndash; <div class="card">-->
+                    <!--<img src="../assets/card_cart.png">-->
+                    <!--<h3>{{ $t("home.extras.marketplace.title") }}</h3>-->
+                    <!--<p>{{ $t("home.extras.marketplace.information") }}</p>-->
+                <!--</div> &ndash;&gt;-->
+                <!--<div class="card">-->
+                    <!--<img src="../assets/card_exchange.png">-->
+                    <!--<h3>{{ $t("home.extras.keys.title") }}</h3>-->
+                    <!--<p>{{ $t("home.extras.keys.information") }}</p>-->
+                <!--</div>-->
+                <!--<div class="card">-->
+                    <!--<img src="../assets/card_ridl.png">-->
+                    <!--<h3>{{ $t("home.extras.ridl.title") }}</h3>-->
+                    <!--<p>{{ $t("home.extras.ridl.information") }}</p>-->
+                <!--</div>-->
+            <!--</section>-->
+            <!--<section class="half-width">-->
+                <!--<div class="card">-->
+                    <!--<img src="../assets/card_wallet.png">-->
+                    <!--<h3>{{ $t("home.extras.identity.title") }}</h3>-->
+                    <!--<p>{{ $t("home.extras.identity.information") }}</p>-->
+                <!--</div>-->
+                <!--<div class="card">-->
+                    <!--<img src="../assets/card_identity.png">-->
+                    <!--<h3>{{ $t("home.extras.exchange.title") }}</h3>-->
+                    <!--<p>{{ $t("home.extras.exchange.information") }}</p>-->
+                <!--</div>-->
+            <!--</section>-->
+        <!--</section>-->
     </div>
 </template>
 
@@ -201,9 +105,9 @@
           return {
             title: 'Download Scatter Desktop for Windows, Mac, and Linux',
             meta: [
-              { 
-                hid: 'description', 
-                name: 'description', 
+              {
+                hid: 'description',
+                name: 'description',
                 content: 'It is critical that you only download Scatter from us! Any other provider is untrustworthy and likely will steal your private keys and the associated accounts.'
               }
             ]
@@ -264,7 +168,7 @@
                 animation-delay: $i * -($time/$total);
                 opacity: 0;
             }
-            
+
             @keyframes anim#{$i}{
                 0% {
                     opacity: 0.35;
@@ -285,7 +189,7 @@
         .lead-content {
             width: 50%;
             padding:0 8rem;
-            
+
             display:flex;
             flex-direction:column;
             align-items:flex-start;
@@ -318,10 +222,10 @@
                 color:white;
                 line-height: 24px;
                 margin-bottom:2rem;
-                
+
                 span, a {
                     color:white;
-                }   
+                }
 
                 span {
                     font-size:$font-size-standard;
@@ -389,7 +293,7 @@
                     width: 100%;
                     max-width: 920px;
                 }
-                
+
             }
 
             .mobile-image {
@@ -408,7 +312,7 @@
                     border-radius:6px;
                     box-shadow: 0 10px 20px 0 rgba(7,83,123,0.39);
                 }
-                
+
             }
         }
     }
@@ -575,5 +479,5 @@
             }
         }
     }
-    
+
 </style>

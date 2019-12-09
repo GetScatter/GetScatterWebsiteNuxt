@@ -5,6 +5,9 @@ const { I18N } = require('./locales/i18n-nuxt-config')
 
 export default {
   mode: 'universal',
+  googleAnalytics: {
+    id: 'UA-126826852-1'
+  },
   head: {
     title: 'Scatter, an open-source multi blockchain wallet',
     meta: [

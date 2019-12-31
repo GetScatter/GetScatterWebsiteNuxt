@@ -6,7 +6,7 @@ const { I18N } = require('./locales/i18n-nuxt-config')
 export default {
   mode: 'universal',
   googleAnalytics: {
-    id: 'UA-126826852-1'
+    id: 'UA-12301-2'
   },
   head: {
     title: 'Scatter, an open-source multi blockchain wallet',
@@ -59,6 +59,7 @@ export default {
   */
   modules: [
     ['nuxt-i18n', I18N],
+    '@nuxtjs/sitemap'
   ],
   /*
   ** Build configuration

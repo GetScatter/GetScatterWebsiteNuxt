@@ -1,22 +1,18 @@
-# getscatterwebsite
+# DigitalForge
 
-> GetScatterWebsite with NUXT 
+> Website for the get-scatter.com website
 
 ## Build Setup
 
-``` bash
-# install dependencies
-$ yarn install
+We are running digitalforge.codes with PM2. After each update you must run:
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+1. Pull from github on the server: 'git pull origin master'
+2. yarn install && yarn build
+3. run "pm2 reload gs_run"
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+Setting up PM2
 
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+1. Make sure that there is an "ecosystem.config.js" file, and .env, .env.dev, etc.
+2. In ecosystem.config.js you must define the correct start script
+3. "pm2 start ecosystem.config.js --only gs_run" will run the script as a daemon
+  

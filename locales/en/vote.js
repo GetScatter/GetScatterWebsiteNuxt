@@ -18,7 +18,7 @@ export default {
   },
   smalltext: "For those wishing to vote elsewhere, our BP name is vote4scatter",
   information: "Interacting with the people who use Scatter has been one of the most humbling experiences of our lives and we've met some truly kind individuals along the way. A lot of the decisions we've made over the years have been directly influenced by the conversations that have gone on in our community chats and we've watched in astonishment as random people on the internet helped other random people through both good times and bad times. We've gotten request after request over the years for us to register as an EOSIO Block Producer, and we're finally ready to step into that role and take on yet another responsibility which helps secure users, and the network. ",
-  notice: "Though we're starting with the EOS Mainnet, we intend to expand this initiative into other chains and networks as well, as we fully believe in a broader ecosystem which includes many options with many different structures, each suited best for individual projects.",
+  notice: "Though we're starting with the Telos Mainnet, we intend to expand this initiative into other chains and networks as well, as we fully believe in a broader ecosystem which includes many options with many different structures, each suited best for individual projects.",
   contributions: {
     title: "Scatter's ecosystem contributions",
     desktop: {

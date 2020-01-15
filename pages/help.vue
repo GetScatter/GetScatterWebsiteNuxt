@@ -9,19 +9,19 @@
 					<h4 class="centered">
 						{{ $t('help.tagline') }}
 					</h4>
-					
+
 					<section class="help-row">
 						<section class="help-option">
 							<h2>{{ $t('help.donate.title') }}</h2>
 							<p>{{ $t('help.donate.text') }}</p>
-							
+
 							<div v-if="loggedin">
-								<div class="button button-primary" @click="donate()">{{ $t('help.donatebutton') }}</div>
+								<div class="button button-primary" @click="donate()">{{ $t('help.donatebutton').replace('10', this.amount) }}</div>
 								<div class="button button-text" @click="logout()">{{ $t('help.logout') }}</div>
 							</div>
 
 							<div v-else class="button button-primary" @click="login()">{{ $t('help.donate.loginbutton') }}</div>
-							
+
 						</section>
 
 						<section class="help-option">
@@ -49,7 +49,7 @@
 
 			</section>
 		</section>
-			
+
 	</section>
 </template>
 
@@ -78,6 +78,7 @@
 			loggedin: null,
 			scatter:null,
 			error:null,
+      amount:1,
 		}},
 		head () {
           return {
@@ -125,52 +126,37 @@
 
 			},
 			async donate(){
+        this.donated = false;
 
 				const eos = ScatterJS.eos(network, Api, {rpc});
 
-				(async () =>{
-				    var res = await eos.transaction({
-					    actions: [
-					    {
-					        account: "scatterfunds", //has to be the smart contract name of the token you want to transfer - eosio for EOS or eosjackscoin for JKR for example
-					        name: "transfer",
-					        authorization: [{
-					            actor: this.account.name,
-					            permission: this.account.authority
-					        }
-					        ],
-					        data: {
-					            from: this.account.name,
-					            to: "scatterfunds",
-					            quantity: "0.0001 EOS",
-					            memo: ""
-					        }
-					    }]
-					});
-				})();
+        const success = await eos.transact({
+          actions: [
+            {
+              account: "eosio.token",
+              name: "transfer",
+              authorization: [{
+                actor: this.account.name,
+                permission: this.account.authority
+              }
+              ],
+              data: {
+                from: this.account.name,
+                to: "scatterfunds",
+                quantity: `${parseFloat(this.amount).toFixed(4)} EOS`,
+                memo: ""
+              }
+            }]
+        }, {
+          blocksBehind: 3,
+          expireSeconds: 30,
+        }).then(x => x.hasOwnProperty('transaction_id')).catch(() => false);
 
-				// (async () => {
-				//   const result = await eos.transact({
-				//     actions: [{
-				//       account: 'eosio.token',
-				//       name: 'transfer',
-				//       authorization: [{
-				//         actor: this.account.name,
-				//         permission: 'active',
-				//       }],
-				//       data: {
-				//         from: this.account.name,
-				//         to: 'scatterfunds',
-				//         quantity: '0.0001 EOS',
-				//         memo: '',
-				//       },
-				//     }]
-				//   }, {
-				//     blocksBehind: 3,
-				//     expireSeconds: 30,
-				//   });
-				//   console.dir(result);
-				// })();
+        if(success) {
+          this.donated = true;
+          this.logout();
+          alert('Donated!')
+        }
 			},
 			async logout(){
 				ScatterJS.forgetIdentity();
@@ -215,9 +201,9 @@
 				text-align:center;
 			}
 		}
-		
 
-		
+
+
 	}
 
 

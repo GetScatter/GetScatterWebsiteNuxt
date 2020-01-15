@@ -116,9 +116,6 @@
 
 				if(!this.account) {
 					this.error = 'You must log in first.';
-					return this.loggedin = false;
-				} else {
-					return this.loggedin = true;
 				}
 
 			},
@@ -157,7 +154,6 @@
 			},
 			async logout(){
 				ScatterJS.forgetIdentity();
-				return this.loggedin = false;
 			}
 		},
 	}

@@ -26,7 +26,7 @@
 
 						<section class="help-option">
 							<h2>{{ $t('help.build.title') }}</h2>
-							<p>{{ $t('help.build.text') }}</p>
+							<p v-html="$t('help.build.text')"></p>
 						</section>
 					</section>
 
@@ -75,7 +75,6 @@
 	export default {
 		data(){return {
 			donated: null,
-			loggedin: null,
 			scatter:null,
 			error:null,
 		}},
@@ -99,6 +98,9 @@
 			account(){
 				if(!this.identity) return;
 				return this.scatter.identity.accounts[0];
+			},
+			loggedin(){
+				return this.account;
 			}
 		},
 		methods:{
@@ -110,11 +112,6 @@
 						resolve(true);
 					})
 				})
-
-				if(connected){
-					await this.scatter.logout().catch(() => null);
-					await this.scatter.login().catch(() => null);
-				}
 
 				if(!this.account) {
 					this.error = 'You must log in first.';

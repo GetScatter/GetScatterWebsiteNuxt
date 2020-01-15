@@ -29,10 +29,10 @@
         </section>
         <hr>
         <section class="single-column" data-aos="fade-up">
-            <nuxt-link :to="localePath('vote')" id="vote">
-                <img src="../assets/love.png" class="loveme">
-                <h1 v-html="$t('home.vote.title')"></h1>
-                <h3>{{ $t("home.vote.information") }}</h3>
+            <nuxt-link :to="localePath('help')" id="help">
+                <img src="../assets/help.png" class="loveme">
+                <h1 v-html="$t('home.help.title')"></h1>
+                <h3>{{ $t("home.help.information") }}</h3>
             </nuxt-link>
         </section>
         <hr>
@@ -421,6 +421,29 @@
 
         &:hover {
           background-color:lighten($blue,44%);
+        }
+
+    }
+
+    #help {
+        text-align:center;
+        background-position: center bottom;
+        background-repeat:no-repeat;
+        position:relative;
+        margin:0 0 6rem;
+        text-decoration:none !important;
+        display:flex;
+        flex-direction:column;
+        padding:4rem;
+        border-radius:20px;
+        transition:background-color 0.12s ease-in-out;
+
+        &:hover {
+          background-color:lighten($blue,44%);
+        }
+
+        img {
+          max-width:288px;
         }
 
     }

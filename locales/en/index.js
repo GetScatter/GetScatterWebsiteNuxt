@@ -14,6 +14,7 @@ import vote from './vote'
 import articles from './articles'
 import whywebuildoneosio from './whywebuildoneosio'
 import founders from './founders'
+import help from './help'
 
 export default {
   // Standard
@@ -34,6 +35,7 @@ export default {
   download: download,
   vote: vote,
   founders: founders,
+  help: help,
   articles: articles,
   productscomponent: productscomponent,
 

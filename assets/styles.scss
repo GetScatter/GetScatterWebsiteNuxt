@@ -265,7 +265,7 @@ h5 {
 
 .button {
   display: inline-block;
-  padding: 20px 40px;
+  padding: 14px 20px;
   background-color: $blue;
   border: 1px solid $blue;
   border-radius: 3px;
@@ -279,6 +279,7 @@ h5 {
   font-size:$font-size-standard;
   box-shadow: 0 10px 44px 0 rgba(7,153,255,0.39);
   transition:background-color 0.12s ease-in-out;
+  cursor:pointer;
 
   @media (max-width: $breakpoint-mobile) {
     width:100%;
@@ -287,10 +288,17 @@ h5 {
   }
 
   &.button-text {
-    background: transparent !important;
+    background: transparent;
     box-shadow: none !important;
+    color:$blue;
+    border:1px solid transparent;
     padding-right:1rem;
     position:relative;
+
+    &:hover {
+      color:$blue;
+      background-color:lighten($blue, 40%);
+    }
   }
 
   &.button-small {

@@ -3,6 +3,10 @@ export default {
     subtitle: "Scatter Desktop is an <a href='https://github.com/GetScatter'>open-source</a> wallet for your digital currencies and assets. ",
     available: "Available now for Windows, MacOS, and Linux.",
     downloadbutton: "Download Scatter Desktop",
+    help: {
+        title: "Help the Scatter Project",
+        information: "We depend on the Scatter community to help us keep building."
+    },
     vote: {
         title: "Vote for <br>Scatter's Block Producer",
         information: "It is your votes that keep our project running. Make sure to head over to our voting page right now and vote for our block producer!"

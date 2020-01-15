@@ -3,6 +3,10 @@ export default {
     subtitle: "Scatter 桌面版是用于您的数字货币和资产的<a href='https://github.com/GetScatter'>开源</a>钱包。",
     available: "可运行在Windows，MacOS和Linux上。",
     downloadbutton: "下载Scatter 桌面版",
+    help: {
+        title: "帮助分散项目",
+        information: "我们依靠Scatter社区来帮助我们不断发展。"
+    },
     vote: {
         title: "投票支持Scatter成为其一区块生产者",
         information: "您手中的一投票将使我们的项目持续运行。 请前访该投票页面，为我们投票！"

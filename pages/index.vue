@@ -40,7 +40,7 @@
             <section class="half-width">
                 <h1>{{ $t("home.bridge.title") }}</h1>
                 <h3>{{ $t("home.bridge.information") }}</h3>
-                <router-link :to="localePath('products/wallets/bridge')" class="button">{{ $t("home.bridge.button") }}</router-link>
+                <!-- <router-link :to="localePath('products/wallets/bridge')" class="button">{{ $t("home.bridge.button") }}</router-link> -->
             </section>
             <section class="half-width">
                 <img src="../assets/scatter_simple_start_people.png">

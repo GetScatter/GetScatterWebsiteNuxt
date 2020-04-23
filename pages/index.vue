@@ -27,14 +27,14 @@
         <section class="maximum-width">
             <ProductsComponent></ProductsComponent>
         </section>
-        <hr>
+        <!-- <hr>
         <section class="single-column" data-aos="fade-up">
             <nuxt-link :to="localePath('help')" id="help">
                 <img src="../assets/help.png" class="loveme">
                 <h1 v-html="$t('home.help.title')"></h1>
                 <h3>{{ $t("home.help.information") }}</h3>
             </nuxt-link>
-        </section>
+        </section> -->
         <hr>
         <section class="full-width standard-padding" id="blockchain-for-everyone" data-aos="fade-up">
             <section class="half-width">

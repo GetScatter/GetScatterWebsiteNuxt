@@ -12,7 +12,6 @@
             <!-- <nuxt-link :to="localePath('vision')">{{ $t("footer.links.vision") }}</nuxt-link> -->
             <a href="https://support.get-scatter.com" title="Get the help you need">{{ $t("footer.links.support") }}</a>
             <nuxt-link :to="localePath('partners')">{{ $t("footer.links.partners") }}</nuxt-link>
-            <nuxt-link :to="localePath('ownership')">{{ $t("footer.links.founders") }}</nuxt-link>
             <nuxt-link :to="localePath('code-of-conduct')">{{ $t("footer.links.code") }}</nuxt-link>
             <nuxt-link :to="localePath('branding')">Branding</nuxt-link>
         </nav>

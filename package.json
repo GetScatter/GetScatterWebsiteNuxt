@@ -19,7 +19,7 @@
     "buttercms": "^1.2.1",
     "eosjs": "^20.0.0",
     "frontmatter-markdown-loader": "^2.3.0",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.4.1",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "nuxt": "^2.0.0",

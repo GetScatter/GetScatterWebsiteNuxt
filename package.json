@@ -26,7 +26,7 @@
     "nuxt-i18n": "^6.3.0",
     "responsive-loader": "^1.2.0",
     "sass-loader": "^8.0.0",
-    "sharp": "^0.23.1",
+    "sharp": "^0.30.5",
     "vue-burger-menu": "^2.0.2",
     "vue-carousel-3d": "^0.2.0",
     "vue-clazy-load": "^0.4.2",
